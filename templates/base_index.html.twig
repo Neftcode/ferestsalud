@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximun-scale=1, minimun-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie-edge">
+        <title>{% block title %}Ferest Salud{% endblock %}</title>
+        {% block stylesheets %}
+            <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/stylesheet.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/alert_notify/alertify.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/alert_notify/themes_default.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/viewer/main.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/viewer/viewer.css') }}">
+            <link rel="stylesheet" href="{{ asset('fonts/css/all.min.css') }}">
+            <link rel="shortcut icon" type="image/icon" href="{{ asset('images/favicon.ico') }}"><!-- Favicon-->
+        {% endblock %}
+    </head>
+    <body>
+        <div class="contenido">
+            {% block body %}
+                
+            {% endblock %}
+        </div>
+        {% block footer %}
+            <footer class="bg-dark text-white mb-0">
+                <div class="text-center" style="line-height: 2.5;">
+                    Ferest Salud IPS | © Copyright 2020 by Neftcode. Todos los derechos reservados.
+                </div>
+            </footer>
+            <hr id="final_contenido">
+        {% endblock %}
+        {% block javascripts %}
+            <script type="text/javascript" src="{{ asset('js/jquery-3.5.1.min.js') }}"></script>
+            <script type="text/javascript" src="{{ asset('js/jquery-ui.js') }}"></script>
+            <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
+            <script type="text/javascript" src="{{ asset('js/popper.min.js') }}"></script>
+            <script type="text/javascript" src="{{ asset('js/menu-abrir.js') }}"></script>
+            <script type="text/javascript" src="{{ asset('js/alert_notify/alertify.min.js') }}"></script>
+            <script type="text/javascript" src="{{ asset('js/viewer/viewer.js') }}"></script>
+            <script type="text/javascript" src="{{ asset('js/console.js') }}"></script>
+            <script type="text/javascript" src="{{ asset('js/functions_index.js') }}"></script>
+        {% endblock %}
+    </body>
+</html>

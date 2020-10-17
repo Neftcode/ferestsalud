@@ -1,0 +1,275 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{{parent()}} - Configuración
+{% endblock %}
+
+{% block body %}
+	{% for message in app.flashes('success') %}
+		<div class="alert alert-success">
+			{{ message }}
+		</div>
+	{% endfor %}
+	<div class="row justify-content-center p-2">
+		<div class="col-md-6 form_config">
+			<div class="form-group m-0 mt-1 p-2">
+				<label>Área</label>
+				{# {{ form(formArea) }} #}
+				{# Formulario Arl #}
+				{{ form_start(formArea, {'attr': {'autocomplete': 'off'}}) }}
+				{{ form_widget(formArea) }}
+				{{ form_end(formArea) }}
+			</div>
+		</div>
+		<div class="col-md-6 form_config">
+			<div class="form-group m-0 mt-1 p-2">
+				<label>Arl</label>
+				{# Formulario Arl #}
+				{{ form_start(formArl, {'attr': {'autocomplete': 'off'}}) }}
+				{{ form_widget(formArl) }}
+				{{ form_end(formArl) }}
+			</div>
+		</div>
+	</div>
+	<div class="row justify-content-center p-2">
+		<div class="col-md-6 form_config">
+			<div class="form-group m-0 mt-1 p-2">
+				<label>Eps</label>
+				{# Formulario Eps #}
+				{{ form_start(formEps, {'attr': {'autocomplete': 'off'}}) }}
+				{{ form_widget(formEps) }}
+				{{ form_end(formEps) }}
+			</div>
+		</div>
+		<div class="col-md-6 form_config">
+			<div class="form-group m-0 mt-1 p-2">
+				<label>Caja Compensación</label>
+				{# Formulario CajaCompensacion #}
+				{{ form_start(formCajaCompensacion, {'attr': {'autocomplete': 'off'}}) }}
+				{{ form_widget(formCajaCompensacion) }}
+				{{ form_end(formCajaCompensacion) }}
+			</div>
+		</div>
+	</div>
+	<div class="row justify-content-center p-2">
+		<div class="col-md-6 form_config">
+			<div class="form-group m-0 mt-1 p-2">
+				<label>Cargo</label>
+				{# Formulario Cargo #}
+				{{ form_start(formCargo, {'attr': {'autocomplete': 'off'}}) }}
+				{{ form_widget(formCargo) }}
+				{{ form_end(formCargo) }}
+			</div>
+		</div>
+		<div class="col-md-6 form_config">
+			<div class="form-group m-0 mt-1 p-2">
+				<label>Ciudad</label>
+				{# Formulario Ciudad #}
+				{{ form_start(formCiudad, {'attr': {'autocomplete': 'off'}}) }}
+				{{ form_widget(formCiudad) }}
+				{{ form_end(formCiudad) }}
+			</div>
+		</div>
+	</div>
+	<div class="row justify-content-center p-2">
+		<div class="col-md-6 form_config">
+			<div class="form-group m-0 mt-1 p-2">
+				<label>Departamento</label>
+				{# Formulario Departamento #}
+				{{ form_start(formDepartamento, {'attr': {'autocomplete': 'off'}}) }}
+				{{ form_widget(formDepartamento) }}
+				{{ form_end(formDepartamento) }}
+			</div>
+		</div>
+		<div class="col-md-6 form_config">
+			<div class="form-group m-0 mt-1 p-2">
+				<label>Estado Usuario</label>
+				{# Formulario EstadoUsuario #}
+				{{ form_start(formEstadoUsuario, {'attr': {'autocomplete': 'off'}}) }}
+				{{ form_widget(formEstadoUsuario) }}
+				{{ form_end(formEstadoUsuario) }}
+			</div>
+		</div>
+	</div>
+	<div class="row justify-content-center p-2">
+		<div class="col-md-6 form_config">
+			<div class="form-group m-0 mt-1 p-2">
+				<label>Fondo Cesantías</label>
+				{# Formulario FondoCesantias #}
+				{{ form_start(formFondoCesantias , {'attr': {'autocomplete': 'off'}}) }}
+				{{ form_widget(formFondoCesantias ) }}
+				{{ form_end(formFondoCesantias) }}
+			</div>
+		</div>
+		<div class="col-md-6 form_config">
+			<div class="form-group m-0 mt-1 p-2">
+				<label>Fondo Pensiones</label>
+				{# Formulario FondoPensiones #}
+				{{ form_start(formFondoPensiones , {'attr': {'autocomplete': 'off'}}) }}
+				{{ form_widget(formFondoPensiones ) }}
+				{{ form_end(formFondoPensiones) }}
+			</div>
+		</div>
+	</div>
+	<div class="row justify-content-center p-2">
+		<div class="col-md-6 form_config">
+			<div class="form-group m-0 mt-1 p-2">
+				<label>Género</label>
+				{# Formulario Género #}
+				{{ form_start(formGenero , {'attr': {'autocomplete': 'off'}}) }}
+				{{ form_widget(formGenero ) }}
+				{{ form_end(formGenero) }}
+			</div>
+		</div>
+		<div class="col-md-6 form_config">
+			<div class="form-group m-0 mt-1 p-2">
+				<label>Módulo</label>
+				{# Formulario Modulo #}
+				{{ form_start(formModulo , {'attr': {'autocomplete': 'off'}}) }}
+				{{ form_widget(formModulo) }}
+				{{ form_end(formModulo) }}
+			</div>
+		</div>
+	</div>
+	<div class="row justify-content-center p-2">
+		<div class="col-md-6 form_config">
+			<div class="form-group m-0 mt-1 p-2">
+				<label>Operación</label>
+				{# Formulario Operacion #}
+				{{ form_start(formOperacion , {'attr': {'autocomplete': 'off'}}) }}
+				{{ form_widget(formOperacion) }}
+				{{ form_end(formOperacion) }}
+			</div>
+		</div>
+		<div class="col-md-6 form_config">
+			<div class="form-group m-0 mt-1 p-2">
+				<label>Operacion Usuario</label>
+				{# Formulario OperacionUsuario #}
+				{{ form_start(formOperacionUsuario , {'attr': {'autocomplete': 'off'}}) }}
+				{{ form_widget(formOperacionUsuario) }}
+				{{ form_end(formOperacionUsuario) }}
+			</div>
+		</div>
+	</div>
+	<div class="row justify-content-center p-2">
+		<div class="col-md-6 form_config">
+			<div class="form-group m-0 mt-1 p-2">
+				<label>Permiso Modulo Usuario</label>
+				{# Formulario PermisoModuloUsuario #}
+				{{ form_start(formPermisoModuloUsuario , {'attr': {'autocomplete': 'off'}}) }}
+				{{ form_widget(formPermisoModuloUsuario) }}
+				{{ form_end(formPermisoModuloUsuario) }}
+			</div>
+		</div>
+		<div class="col-md-6 form_config">
+			<div class="form-group m-0 mt-1 p-2">
+				<label>Rh</label>
+				{# Formulario Rh #}
+				{{ form_start(formRh, {'attr': {'autocomplete': 'off'}}) }}
+				{{ form_widget(formRh) }}
+				{{ form_end(formRh) }}
+			</div>
+		</div>
+	</div>
+	<div class="row justify-content-center p-2">
+		<div class="col-md-6 form_config">
+			<div class="form-group m-0 mt-1 p-2">
+				<label>Rol</label>
+				{# Formulario Rol #}
+				{{ form_start(formRol, {'attr': {'autocomplete': 'off'}}) }}
+				{{ form_widget(formRol) }}
+				{{ form_end(formRol) }}
+			</div>
+		</div>
+		<div class="col-md-6 form_config">
+			<div class="form-group m-0 mt-1 p-2">
+				<label>Sede</label>
+				{# Formulario Sede #}
+				{{ form_start(formSede, {'attr': {'autocomplete': 'off'}}) }}
+				{{ form_widget(formSede) }}
+				{{ form_end(formSede) }}
+			</div>
+		</div>
+	</div>
+	<div class="row justify-content-center p-2">
+		<div class="col-md-6 form_config">
+			<div class="form-group m-0 mt-1 p-2">
+				<label>Storage</label>
+				{# Formulario Storage #}
+				{{ form_start(formStorage, {'attr': {'autocomplete': 'off'}}) }}
+				{{ form_widget(formStorage) }}
+				{{ form_end(formStorage) }}
+			</div>
+		</div>
+		<div class="col-md-6 form_config">
+			<div class="form-group m-0 mt-1 p-2">
+				<label>Tipo Contrato</label>
+				{# Formulario TipoContrato #}
+				{{ form_start(formTipoContrato, {'attr': {'autocomplete': 'off'}}) }}
+				{{ form_widget(formTipoContrato) }}
+				{{ form_end(formTipoContrato) }}
+			</div>
+		</div>
+	</div>
+	<div class="row justify-content-center p-2">
+		<div class="col-md-6 form_config">
+			<div class="form-group m-0 mt-1 p-2">
+				<label>Tipo Documento</label>
+				{# Formulario TipoDocumento #}
+				{{ form_start(formTipoDocumento, {'attr': {'autocomplete': 'off'}}) }}
+				{{ form_widget(formTipoDocumento)}}
+				{{ form_end(formTipoDocumento) }}
+			</div>
+		</div>
+		<div class="col-md-6 form_config">
+			<div class="form-group m-0 mt-1 p-2">
+				<label>Tipo Practicante</label>
+				{# Formulario TipoPracticante #}
+				{{ form_start(formTipoPracticante, {'attr': {'autocomplete': 'off'}}) }}
+				{{ form_widget(formTipoPracticante)}}
+				{{ form_end(formTipoPracticante) }}
+			</div>
+		</div>
+	</div>
+	<div class="row justify-content-center p-2">
+		<div class="col-md-6 form_config">
+			<div class="form-group m-0 mt-1 p-2">
+				<label>Tipo Sangre</label>
+				{# Formulario TipoSangre #}
+				{{ form_start(formTipoSangre, {'attr': {'autocomplete': 'off'}}) }}
+				{{ form_widget(formTipoSangre)}}
+				{{ form_end(formTipoSangre) }}
+			</div>
+		</div>
+		<div class="col-md-6 form_config">
+			<div class="form-group m-0 mt-1 p-2">
+				<label>Tour Modulo</label>
+				{# Formulario TourModulo #}
+				{{ form_start(formTourModulo, {'attr': {'autocomplete': 'off'}}) }}
+				{{ form_widget(formTourModulo) }}
+				{{ form_end(formTourModulo) }}
+			</div>
+		</div>
+	</div>
+	<div class="row justify-content-center p-2">
+		<div class="col-md-6 form_config">
+			<div class="form-group m-0 mt-1 p-2">
+				<label>Usuario</label>
+				{# Formulario Usuario #}
+				{{ form_start(formUsuario, {'attr': {'autocomplete': 'off'}}) }}
+				{{ form_widget(formUsuario) }}
+				{{ form_end(formUsuario) }}
+			</div>
+		</div>
+		<div class="col-md-6 form_config">
+			<div class="form-group m-0 mt-1 p-2">
+				<label>Usuario Notificación</label>
+				{# Formulario UsuarioNotificacion #}
+				{{ form_start(formUsuarioNotificacion, {'attr': {'autocomplete': 'off'}}) }}
+				{{ form_widget(formUsuarioNotificacion) }}
+				{{ form_end(formUsuarioNotificacion) }}
+			</div>
+		</div>
+	</div>
+{% endblock %}
+

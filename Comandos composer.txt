@@ -1,0 +1,28 @@
+# Encender servidor
+symfony server:start
+
+# Crear base de datos
+php bin/console doctrine:database:create
+
+# Crear clase usuario
+php bin/console make:user
+
+# Crear entidad
+php bin/console make:entity
+
+# Compilar para base de datos
+php bin/console doctrine:schema:update --force
+
+# Crear controlador
+php bin/console make:controller
+
+# Crear formulario
+php bin/console make:form
+
+# Crear login
+php bin/console make:auth
+
+
+// Páginas documentación
+https://www.doctrine-project.org/projects/doctrine-orm/en/current/reference/association-mapping.html
+https://symfony.com/doc/current/doctrine/associations.html#more-information-on-associations
