@@ -121,9 +121,9 @@
         {% endblock %}
         <div class="contenido">
             {% block body %}
-                <div class="row justify-content-center">
-                    <div class="col-md-6">
-                        <img src="{{ asset('images/ferest_logo.png') }}" alt="Ferest Salud IPS" style="width: 100%; height: 100%;">
+                <div class="row justify-content-center h-75">
+                    <div class="col-md-6 d-flex align-items-center">
+                        <img src="{{ asset('images/ferestIPS.png') }}" alt="Ferest Salud IPS" class="w-100">
                     </div>
                 </div>
             {% endblock %}
@@ -132,7 +132,7 @@
             <footer>
                 <div class="footer_contenido">
                     <div class="col-md-12 text-center">
-                        <p>Ferest Salud IPS | © Copyright 2020 by Neftcode. Todos los derechos reservados. | Bienvenid{% if app.user.genero %}{% if app.user.genero.nombre=="Femenino" %}a{% else %}o{% endif %}{% else %}o(a){% endif %}, {{ app.user.nombres }} {{ app.user.apellidos }}</p>
+                        <p>Ferest Salud IPS powered by <b>Neftcode ©</b> | Bienvenid{% if app.user.genero %}{% if app.user.genero.nombre=="Femenino" %}a{% else %}o{% endif %}{% else %}o(a){% endif %}, {{ app.user.nombres }} {{ app.user.apellidos }}</p>
                     </div>
                 </div>
             </footer>
