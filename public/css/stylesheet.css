@@ -64,14 +64,16 @@ body::-webkit-scrollbar-thumb {
     height: 100%;
     position: absolute;
     background-color: #FFFFFF;
-    padding: 60px 15px 40px 15px;/*60px 15px 40px 15px;*/
+    padding: 0px;/*60px 15px 40px 15px;*/
     transition: all 0.3s;
     box-sizing: border-box;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .contenido::-webkit-scrollbar {
     width: 0.5em;/*5px*/
+    height: 0.5em;
 }
 
 .contenido::-webkit-scrollbar-track {
@@ -88,6 +90,14 @@ section {
     width: 100%;
     clear: left;
     clear: right;
+}
+
+#final_contenido {
+	width: 0;
+	height: 0;
+	margin-top: 0;
+    margin-bottom: 0;
+    border: 0;
 }
 
 .form-group {
@@ -108,6 +118,45 @@ section {
     margin-right: 10px;
     font-weight: bold;
 }
+
+/*Estilos de botones*/
+.btn-ferest {
+    color: #fff;
+    background-color: #01988D;
+    border-color: #01988D;
+}
+
+.btn-ferest:hover {
+    color: #fff;
+    background-color: #0e7a73;
+    border-color: #156661;
+}
+
+.btn-ferest:focus, .btn-ferest.focus {
+    color: #fff;
+    background-color: #0e7a73;
+    border-color: #156661;
+    box-shadow: 0 0 0 0.2rem rgba(15, 192, 180, 0.5);
+}
+
+.btn-ferest.disabled, .btn-ferest:disabled {
+    color: #fff;
+    background-color: #01988D;
+    border-color: #01988D;
+}
+
+.btn-ferest:not(:disabled):not(.disabled):active, .btn-ferest:not(:disabled):not(.disabled).active,
+.show > .btn-ferest.dropdown-toggle {
+    color: #fff;
+    background-color: #156661;
+    border-color: #156661;
+}
+
+.btn-ferest:not(:disabled):not(.disabled):active:focus, .btn-ferest:not(:disabled):not(.disabled).active:focus,
+.show > .btn-ferest.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(15, 192, 180, 0.5);
+}
+/*Fin estilos de botones*/
 
 /*Flecha para hacer la página hacia arriba*/
 .ir-arriba {
@@ -150,6 +199,11 @@ section {
 }
 
 /*ESTILOS ZOOM IMAGEN*/
+
+img.avatar {
+    width: 100%;
+    border-radius: 50%;
+}
 
 .scroll-y {
     height: auto;
@@ -782,7 +836,7 @@ input[type="radio"]:checked{
 
 /*FOOTER*/
 
-footer{
+footer {
     clear: left;
     width: 100%;
     position: fixed;
@@ -793,6 +847,19 @@ footer{
     transition: all 0.3s;
     background-color: #2E2E2E;
 }
+
+div.ft-index {
+    clear: left;
+    width: 100%;
+    /* position: fixed; */
+    z-index: 990;
+    bottom: 0px !important;
+    /* max-height: 38px; */
+    /* height: 38px; */
+    transition: all 0.3s;
+    background-color: #2E2E2E;
+}
+
 .footer_contenido{
     width: 100%;
     margin-left: auto;
