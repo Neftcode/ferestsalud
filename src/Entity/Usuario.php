@@ -95,32 +95,32 @@ class Usuario implements UserInterface
     private $correo_corporativo;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=10)
      */
     private $salario_basico;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=10)
      */
     private $bono;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=10)
      */
     private $auxilio_transporte;
 
     /**
-     * @ORM\Column(type="string", length=2, nullable=true)
+     * @ORM\Column(type="boolean")
      */
     private $dotacion;
 
     /**
-     * @ORM\Column(type="string", length=2, nullable=true)
+     * @ORM\Column(type="boolean")
      */
     private $carnet;
 
     /**
-     * @ORM\Column(type="string", length=2, nullable=true)
+     * @ORM\Column(type="boolean")
      */
     private $control_logueo;
 
@@ -297,16 +297,16 @@ class Usuario implements UserInterface
         return $this->fecha_expedicion;
     }
 
-    public function getFechaNacimiento(): ?string
-    {
-        return $this->fecha_nacimiento;
-    }
-
     public function setFechaExpedicion(string $fecha_expedicion): self
     {
         $this->fecha_expedicion = $fecha_expedicion;
 
         return $this;
+    }
+
+    public function getFechaNacimiento(): ?string
+    {
+        return $this->fecha_nacimiento;
     }
 
     public function setFechaNacimiento(string $fecha_nacimiento): self
@@ -448,36 +448,36 @@ class Usuario implements UserInterface
         return $this;
     }
 
-    public function getDotacion(): ?string
+    public function getDotacion(): ?bool
     {
         return $this->dotacion;
     }
 
-    public function setDotacion(string $dotacion): self
+    public function setDotacion(bool $dotacion): self
     {
         $this->dotacion = $dotacion;
 
         return $this;
     }
 
-    public function getCarnet(): ?string
+    public function getCarnet(): ?bool
     {
         return $this->carnet;
     }
 
-    public function setCarnet(string $carnet): self
+    public function setCarnet(bool $carnet): self
     {
         $this->carnet = $carnet;
 
         return $this;
     }
 
-    public function getControlLogueo(): ?string
+    public function getControlLogueo(): ?bool
     {
         return $this->control_logueo;
     }
 
-    public function setControlLogueo(string $control_logueo): self
+    public function setControlLogueo(bool $control_logueo): self
     {
         $this->control_logueo = $control_logueo;
 
@@ -489,7 +489,7 @@ class Usuario implements UserInterface
         return $this->fecha_registro;
     }
 
-    public function setFechaRegistro(string $fecha_registro): self
+    public function setFechaRegistro($fecha_registro): self
     {
         $this->fecha_registro = $fecha_registro;
 
@@ -520,19 +520,19 @@ class Usuario implements UserInterface
         return $this;
     }
 
-    public function getCaja_compensacion(): ?CajaCompensacion
+    public function getCajaCompensacion(): ?CajaCompensacion
     {
         return $this->caja_compensacion;
     }
 
-    public function setCaja_compensacion($caja_compensacion): self
+    public function setCajaCompensacion($caja_compensacion): self
     {
         $this->caja_compensacion = $caja_compensacion;
 
         return $this;
     }
 
-    public function getCargo(): ?Cargo
+    public function getCargo(): ?OperacionUsuario
     {
         return $this->cargo;
     }
@@ -544,12 +544,12 @@ class Usuario implements UserInterface
         return $this;
     }
 
-    public function getCiudad_residencia(): ?Ciudad
+    public function getCiudadResidencia(): ?Ciudad
     {
         return $this->ciudad_residencia;
     }
 
-    public function setCiudad_residencia($ciudad_residencia): self
+    public function setCiudadResidencia($ciudad_residencia): self
     {
         $this->ciudad_residencia = $ciudad_residencia;
 
@@ -568,48 +568,48 @@ class Usuario implements UserInterface
         return $this;
     }
 
-    public function getEstado_usuario(): ?EstadoUsuario
+    public function getEstadoUsuario(): ?EstadoUsuario
     {
         return $this->estado_usuario;
     }
 
-    public function setEstado_usuario($estado_usuario): self
+    public function setEstadoUsuario($estado_usuario): self
     {
         $this->estado_usuario = $estado_usuario;
 
         return $this;
     }
 
-    public function getFondo_cesantias(): ?FondoCesantias
+    public function getFondoCesantias(): ?FondoCesantias
     {
         return $this->fondo_cesantias;
     }
 
-    public function setFondo_cesantias($fondo_cesantias): self
+    public function setFondoCesantias($fondo_cesantias): self
     {
         $this->fondo_cesantias = $fondo_cesantias;
 
         return $this;
     }
 
-    public function getFondo_pensiones(): ?FondoPensiones
+    public function getFondoPensiones(): ?FondoPensiones
     {
         return $this->fondo_pensiones;
     }
 
-    public function setFondo_pensiones($fondo_pensiones): self
+    public function setFondoPensiones($fondo_pensiones): self
     {
         $this->fondo_pensiones = $fondo_pensiones;
 
         return $this;
     }
 
-    public function getJefe_directo(): ?Usuario
+    public function getJefeDirecto(): ?Usuario
     {
         return $this->jefe_directo;
     }
 
-    public function setJefe_directo($jefe_directo): self
+    public function setJefeDirecto($jefe_directo): self
     {
         $this->jefe_directo = $jefe_directo;
 
@@ -628,48 +628,48 @@ class Usuario implements UserInterface
         return $this;
     }
 
-    public function getSede_laboral(): ?Sede
+    public function getSedeLaboral(): ?Sede
     {
         return $this->sede_laboral;
     }
 
-    public function setSede_laboral($sede_laboral): self
+    public function setSedeLaboral($sede_laboral): self
     {
         $this->sede_laboral = $sede_laboral;
 
         return $this;
     }
 
-    public function getTipo_contrato(): ?TipoContrato
+    public function getTipoContrato(): ?TipoContrato
     {
         return $this->tipo_contrato;
     }
 
-    public function setTipo_contrato($tipo_contrato): self
+    public function setTipoContrato($tipo_contrato): self
     {
         $this->tipo_contrato = $tipo_contrato;
 
         return $this;
     }
 
-    public function getTipo_documento(): ?TipoDocumento
+    public function getTipoDocumento(): ?TipoDocumento
     {
         return $this->tipo_documento;
     }
 
-    public function setTipo_documento($tipo_documento): self
+    public function setTipoDocumento($tipo_documento): self
     {
         $this->tipo_documento = $tipo_documento;
 
         return $this;
     }
 
-    public function getTipo_sangre(): ?TipoSangre
+    public function getTipoSangre(): ?TipoSangre
     {
         return $this->tipo_sangre;
     }
 
-    public function setTipo_sangre($tipo_sangre): self
+    public function setTipoSangre($tipo_sangre): self
     {
         $this->tipo_sangre = $tipo_sangre;
 
@@ -691,6 +691,11 @@ class Usuario implements UserInterface
     {
         // If you store any temporary, sensitive data on the user, clear it here
         // $this->plainPassword = null;
+    }
+
+    public function __toString()
+    {
+        return $this->getNombres().' '.$this->getApellidos();
     }
 
 }

@@ -106,13 +106,13 @@
                         </ul>
                     </li>
                     {% endif %}
-                    {% if "configuraciones" in permisos|keys %}
+                    {% if "admin" in permisos|keys %}
                     <li class="submenu">
-                        <a href="{{ path('registro_configuracion') }}">
+                        <a href="{{ path('admin') }}">
                             <div class="opcion_icon">
                                 <span class="fas fa-cogs"></span>
                             </div>
-                            <p class="texto_menu">{{permisos.configuraciones.modNombre}}</p>
+                            <p class="texto_menu">{{permisos.admin.modNombre}}</p>
                         </a>
                     </li>
                     {% endif %}

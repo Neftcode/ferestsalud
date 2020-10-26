@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use App\Repository\CiudadRepository;
 use Doctrine\ORM\Mapping as ORM;
+use phpDocumentor\Reflection\Types\Boolean;
 
 /**
  * @ORM\Entity(repositoryClass=CiudadRepository::class)
@@ -28,17 +29,17 @@ class Ciudad
     private $nombre;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="boolean")
      */
     private $capital_departamento;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="boolean")
      */
     private $capital_territorio;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Departamento")
+     * @ORM\ManyToOne(targetEntity="App\Entity\Departamento", inversedBy="ciudades")
      */
     private $departamento;
 
@@ -71,43 +72,46 @@ class Ciudad
         return $this;
     }
 
-    public function getCapitalDepartamento(): ?int
+    public function getCapitalDepartamento(): ?bool
     {
         return $this->capital_departamento;
     }
 
-    public function setCapitalDepartamento(int $capital_departamento): self
+    public function setCapitalDepartamento(bool $capital_departamento): self
     {
         $this->capital_departamento = $capital_departamento;
 
         return $this;
     }
 
-    public function getCapitalTerritorio(): ?int
+    public function getCapitalTerritorio(): ?bool
     {
         return $this->capital_territorio;
     }
 
-    public function setCapitalTerritorio(int $capital_territorio): self
+    public function setCapitalTerritorio(bool $capital_territorio): self
     {
         $this->capital_territorio = $capital_territorio;
 
         return $this;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getDepartamento(): ?int
+    public function getDepartamento(): ?Departamento
     {
         return $this->departamento;
     }
 
-    /**
-     * @param mixed $departamento
-     */
-    public function setDepartamento($departamento): void
+    public function setDepartamento($departamento): self
     {
         $this->departamento = $departamento;
+
+        return $this;
     }
+
+    public function __toString()
+    {
+        $departamento = $this->getDepartamento()==NULL ? '' : ', '.$this->getDepartamento();
+        return $this->getNombre().$departamento;
+    }
+    
 }

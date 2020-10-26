@@ -23,7 +23,7 @@ class Cargo
     private $nombre;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\TipoPracticante")
+     * @ORM\ManyToOne(targetEntity="App\Entity\TipoPracticante", inversedBy="cargos")
      */
     private $tipo_practicante;
 
@@ -43,24 +43,23 @@ class Cargo
 
         return $this;
     }
-
-    /**
-     * Get the value of tipo_practicante
-     */ 
-    public function getTipo_practicante(): ?int
+    
+    public function getTipoPracticante(): ?TipoPracticante
     {
         return $this->tipo_practicante;
     }
 
-    /**
-     * Set the value of tipo_practicante
-     *
-     * @return  self
-     */ 
-    public function setTipo_practicante($tipo_practicante): self
+    public function setTipoPracticante($tipo_practicante): self
     {
         $this->tipo_practicante = $tipo_practicante;
 
         return $this;
     }
+
+    public function __toString()
+    {
+        $tipo_practicante = $this->getTipoPracticante()==NULL ? '' : ', '.$this->getTipoPracticante()->getNombre();
+        return $this->getNombre().$tipo_practicante;
+    }
+
 }

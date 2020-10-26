@@ -55,4 +55,10 @@ class TipoDocumento
 
         return $this;
     }
+
+    public function __toString()
+    {
+        return $this->getNombre().', '.$this->getDescripcion();
+    }
+
 }

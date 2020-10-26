@@ -100,25 +100,6 @@ section {
     border: 0;
 }
 
-.form-group {
-    border: 1px solid #01988D;
-}
-
-.form-group > label {
-    font-weight: bold;
-    text-align: center;
-    width: 100%;
-    height: 30px;
-    line-height: 2;
-    background-color: #01988D;
-    color: #FFFFFF;
-}
-
-.form-group label[for] {
-    margin-right: 10px;
-    font-weight: bold;
-}
-
 /*Estilos de botones*/
 .btn-ferest {
     color: #fff;

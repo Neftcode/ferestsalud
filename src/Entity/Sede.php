@@ -31,16 +31,16 @@ class Sede
      * @ORM\Column(type="string", length=100)
      */
     private $direccion;
-
+    
     /**
      * @ORM\Column(type="string", length=200, nullable=true)
      */
     private $observaciones;
-
+    
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\Usuario", mappedBy="sede_laboral")
+     * @ORM\ManyToOne(targetEntity="App\Entity\Ciudad")
      */
-    private $usuario;
+    private $ciudad;
 
     public function getId(): ?int
     {
@@ -88,10 +88,28 @@ class Sede
         return $this->observaciones;
     }
 
-    public function setObservaciones(string $observaciones): self
+    public function setObservaciones($observaciones): self
     {
         $this->observaciones = $observaciones;
 
         return $this;
     }
+
+    public function getCiudad(): ?Ciudad
+    {
+        return $this->ciudad;
+    }
+
+    public function setCiudad($ciudad): self
+    {
+        $this->ciudad = $ciudad;
+
+        return $this;
+    }
+
+    public function __toString()
+    {
+        return $this->getNombre();
+    }
+    
 }

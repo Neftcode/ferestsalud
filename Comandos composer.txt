@@ -1,6 +1,9 @@
 # Encender servidor
 symfony server:start
 
+# Borrar caché
+php bin/console cache:clear
+
 # Crear base de datos
 php bin/console doctrine:database:create
 

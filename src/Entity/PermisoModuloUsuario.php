@@ -37,51 +37,48 @@ class PermisoModuloUsuario
         return $this->id;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getModulo()
+    public function getModulo(): ?Modulo
     {
         return $this->modulo;
     }
 
-    /**
-     * @param mixed $modulo
-     */
-    public function setModulo($modulo): void
+    public function setModulo($modulo): self
     {
         $this->modulo = $modulo;
+
+        return $this;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getRol()
+    public function getRol(): ?Rol
     {
         return $this->rol;
     }
 
-    /**
-     * @param mixed $rol
-     */
-    public function setRol($rol): void
+    public function setRol($rol): self
     {
         $this->rol = $rol;
+
+        return $this;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getUsuario()
+    public function getUsuario(): ?Usuario
     {
         return $this->usuario;
     }
 
-    /**
-     * @param mixed $usuario
-     */
-    public function setUsuario($usuario): void
+    public function setUsuario($usuario): self
     {
         $this->usuario = $usuario;
+
+        return $this;
     }
+
+    public function __toString()
+    {
+        $modulo = $this->getModulo() == NULL ? 'Nulo' : $this->getModulo();
+        $rol = $this->getRol() == NULL ? 'Nulo' : $this->getRol();
+        $usuario = $this->getUsuario() == NULL ? 'Nulo' : $this->getUsuario();
+        return $modulo . ', ' . $rol . ', ' . $usuario;
+    }
+    
 }

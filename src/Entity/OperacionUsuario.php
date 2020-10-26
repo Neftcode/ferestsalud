@@ -64,58 +64,55 @@ class OperacionUsuario
         return $this->observaciones;
     }
 
-    public function setObservaciones(string $observaciones): self
+    public function setObservaciones($observaciones): self
     {
         $this->observaciones = $observaciones;
 
         return $this;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getArea()
+    public function getArea(): ?Area
     {
         return $this->area;
     }
 
-    /**
-     * @param mixed $area
-     */
-    public function setArea($area): void
+    public function setArea($area): self
     {
         $this->area = $area;
+
+        return $this;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getCargo()
+    public function getCargo(): ?Cargo
     {
         return $this->cargo;
     }
 
-    /**
-     * @param mixed $cargo
-     */
-    public function setCargo($cargo): void
+    public function setCargo($cargo): self
     {
         $this->cargo = $cargo;
+
+        return $this;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getOperacion()
+    public function getOperacion(): ?Operacion
     {
         return $this->operacion;
     }
 
-    /**
-     * @param mixed $operacion
-     */
-    public function setOperacion($operacion): void
+    public function setOperacion($operacion): self
     {
         $this->operacion = $operacion;
+
+        return $this;
     }
+
+    public function __toString()
+    {
+        $operacion = $this->getOperacion()==NULL ? 'Nulo' : $this->getOperacion();
+        $area = $this->getArea() == NULL ? 'Nulo' : $this->getArea();
+        $cargo = $this->getCargo() == NULL ? 'Nulo' : $this->getCargo();
+        return $operacion.', '.$area.', '.$cargo;
+    }
+
 }

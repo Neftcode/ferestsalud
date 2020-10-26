@@ -54,10 +54,16 @@ class TipoContrato
         return $this->observaciones;
     }
 
-    public function setObservaciones(string $observaciones): self
+    public function setObservaciones($observaciones): self
     {
         $this->observaciones = $observaciones;
 
         return $this;
     }
+
+    public function __toString()
+    {
+        return $this->getNombre();
+    }
+    
 }
