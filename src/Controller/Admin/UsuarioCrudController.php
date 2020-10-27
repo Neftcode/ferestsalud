@@ -31,16 +31,21 @@ class UsuarioCrudController extends AbstractCrudController
         // dd($_SESSION["permisos"]);
         if (Crud::PAGE_EDIT === $pageName) {
             if ($permisos["admin_usuario"]["rolNombre"]=="ROLE_SUPER_ADMIN") {
-                yield IdField::new('id', 'ID');
+                yield IdField::new('id', 'ID')
+                ->setFormTypeOptions(['attr' => ['maxlength' => 15]]);
                 yield AssociationField::new('tipo_documento', 'Documento');
                 yield TextField::new('username', 'Usuario');
             } else {
-                yield IdField::new('id', 'ID')->setFormTypeOptions(['attr' => ['readonly' => true]]);
-                yield AssociationField::new('tipo_documento', 'Documento')->setFormTypeOptions(['attr' => ['disabled' => true]]);
-                yield TextField::new('username', 'Usuario')->setFormTypeOptions(['attr' => ['readonly' => true]]);
+                yield IdField::new('id', 'ID')
+                ->setFormTypeOptions(['attr' => ['readonly' => true, 'maxlength' => 15]]);
+                yield AssociationField::new('tipo_documento', 'Documento')
+                ->setFormTypeOptions(['attr' => ['disabled' => true]]);
+                yield TextField::new('username', 'Usuario')
+                ->setFormTypeOptions(['attr' => ['readonly' => true]]);
             }
         } else {
-            yield IdField::new('id', 'ID');
+            yield IdField::new('id', 'ID')
+            ->setFormTypeOptions(['attr' => ['maxlength' => 15]]);
             yield AssociationField::new('tipo_documento', 'Documento');
             yield TextField::new('username', 'Usuario');
         }
@@ -125,6 +130,6 @@ class UsuarioCrudController extends AbstractCrudController
             ->add('jefe_directo')
             ->add('sede_laboral')
             ->add('tipo_contrato');
-        }
+    }
     
 }

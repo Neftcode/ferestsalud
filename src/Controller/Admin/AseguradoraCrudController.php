@@ -2,23 +2,22 @@
 
 namespace App\Controller\Admin;
 
-use App\Entity\Genero;
+use App\Entity\Aseguradora;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextField;
 
-class GeneroCrudController extends AbstractCrudController
+class AseguradoraCrudController extends AbstractCrudController
 {
     public static function getEntityFqcn(): string
     {
-        return Genero::class;
+        return Aseguradora::class;
     }
 
     public function configureFields(string $pageName): iterable
     {
         return [
             // IdField::new('id'),
-            TextField::new('nombre'),
-            TextField::new('alt', 'Alternativo')
+            TextField::new('nombre')
         ];
     }
     

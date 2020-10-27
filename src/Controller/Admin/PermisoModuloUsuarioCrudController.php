@@ -3,6 +3,7 @@
 namespace App\Controller\Admin;
 
 use App\Entity\PermisoModuloUsuario;
+use EasyCorp\Bundle\EasyAdminBundle\Config\Filters;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
 use EasyCorp\Bundle\EasyAdminBundle\Field\AssociationField;
 
@@ -21,6 +22,13 @@ class PermisoModuloUsuarioCrudController extends AbstractCrudController
             AssociationField::new('rol'),
             AssociationField::new('usuario')
         ];
+    }
+
+    public function configureFilters(Filters $filters): Filters
+    {
+        return $filters
+            ->add('modulo')
+            ->add('usuario');
     }
     
 }

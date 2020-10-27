@@ -23,6 +23,11 @@ class Genero
     private $nombre;
 
     /**
+     * @ORM\Column(type="string", length=2)
+     */
+    private $alt;
+
+    /**
      * @ORM\OneToMany(targetEntity="App\Entity\Usuario", mappedBy="genero")
      */
     private $usuario;
@@ -44,9 +49,21 @@ class Genero
         return $this;
     }
 
+    public function getAlt(): ?string
+    {
+        return $this->alt;
+    }
+
+    public function setAlt($alt): self
+    {
+        $this->alt = $alt;
+
+        return $this;
+    }
+
     public function __toString()
     {
-        return $this->getNombre();
+        return $this->getAlt();
     }
     
 }

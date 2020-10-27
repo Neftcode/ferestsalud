@@ -25,6 +25,9 @@ php bin/console make:form
 # Crear login
 php bin/console make:auth
 
+# Crear CRUD EasyAdmin3
+php bin/console make:admin:crud
+
 
 // Páginas documentación
 https://www.doctrine-project.org/projects/doctrine-orm/en/current/reference/association-mapping.html
