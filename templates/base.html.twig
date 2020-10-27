@@ -50,26 +50,15 @@
                             <p class="texto_menu">Dashboard</p>
                         </a>
                     </li>
-                    {% if "recepcion" in permisos|keys %}
+                    {# {% if "recepcion" in permisos|keys %}
                     <li class="submenu">
                         <a href="javascript:;">
                             <div class="opcion_icon">
                                 <span class="fas fa-user-check"></span>
                             </div>
                             <p class="texto_menu">{{permisos.recepcion.modNombre}}
-                                {# <span class="fas fa-chevron-down submenu_icon"></span> #}
                             </p>
                         </a>
-                        {# <ul>
-                            <li>
-                                <a href="javascript:;">
-                                    <div class="opcion_icon">
-                                        <span class="fas fa-phone-volume"></span>
-                                    </div>
-                                    <p class="texto_menu">Nombre</p>
-                                </a>
-                            </li>
-                        </ul> #}
                     </li>
                     {% endif %}
                     {% if "farmacia" in permisos|keys %}
@@ -105,7 +94,7 @@
                             {% endif %}
                         </ul>
                     </li>
-                    {% endif %}
+                    {% endif %} #}
                     {% if "admin" in permisos|keys %}
                     <li class="submenu">
                         <a href="{{ path('admin') }}">

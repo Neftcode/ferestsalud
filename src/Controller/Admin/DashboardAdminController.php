@@ -16,9 +16,9 @@ use App\Entity\FondoCesantias;
 use App\Entity\FondoPensiones;
 use App\Entity\Genero;
 use App\Entity\Ingreso;
+use App\Entity\Medicamento;
 use App\Entity\Modulo;
 use App\Entity\Operacion;
-use App\Entity\OperacionUsuario;
 use App\Entity\PermisoModuloUsuario;
 use App\Entity\Rh;
 use App\Entity\Rol;
@@ -89,39 +89,51 @@ class DashboardAdminController extends AbstractDashboardController
         }
         if (array_key_exists("farmacia", $permisos)) {
             yield MenuItem::section('Farmacia');
-            if (array_key_exists("farmacia_venta", $permisos)) {
-                yield MenuItem::linkToCrud('Ventas', 'fas fa-cash-register', Cliente::class);
+            if (array_key_exists("farmacia_ventas", $permisos)) {
+                yield MenuItem::linkToCrud('Ventas', 'fas fa-cash-register', Medicamento::class);
             }
             if (array_key_exists("farmacia_inventario", $permisos)) {
-                yield MenuItem::linkToCrud('Inventario', 'fas fa-boxes', Cliente::class);
+                yield MenuItem::linkToCrud('Inventario', 'fas fa-boxes', Medicamento::class);
+            }
+            if (array_key_exists("farmacia_medicamentos", $permisos)) {
+                yield MenuItem::linkToCrud('Medicamentos', 'fas fa-medkit', Medicamento::class);
             }
         }
         if (array_key_exists("admin", $permisos)) {
             yield MenuItem::section('Administración');
-            yield MenuItem::linkToCrud('Áreas', 'fas fa-box', Area::class);
+            if (array_key_exists("admin_otros", $permisos)) {
+                yield MenuItem::linkToCrud('Áreas', 'fas fa-box', Area::class);
+            }
             yield MenuItem::linkToCrud('Arl', 'fas fa-user-injured', Arl::class);
             yield MenuItem::linkToCrud('Aseguradoras', 'fas fa-user-shield', Aseguradora::class);
             yield MenuItem::linkToCrud('Cajas de compensación', 'fas fa-hand-holding-heart', CajaCompensacion::class);
             yield MenuItem::linkToCrud('Cargos', 'fas fa-user-tie', Cargo::class);
-            yield MenuItem::linkToCrud('Ciudades', 'fas fa-city', Ciudad::class);
-            yield MenuItem::linkToCrud('Departamentos', 'fas fa-flag', Departamento::class);
+            if (array_key_exists("admin_otros", $permisos)) {
+                yield MenuItem::linkToCrud('Ciudades', 'fas fa-city', Ciudad::class);
+                yield MenuItem::linkToCrud('Departamentos', 'fas fa-flag', Departamento::class);
+            }
             yield MenuItem::linkToCrud('Documentos TI', 'fas fa-id-card', TipoDocumento::class);
             yield MenuItem::linkToCrud('Eps', 'fas fa-hand-holding-medical', Eps::class);
             yield MenuItem::linkToCrud('Estados de usuario', 'fas fa-id-badge', EstadoUsuario::class);
             yield MenuItem::linkToCrud('Fondos de cesantías', 'fas fa-hand-holding-usd', FondoCesantias::class);
             yield MenuItem::linkToCrud('Fondos de pensiones', 'fas fa-hand-holding-usd', FondoPensiones::class);
             yield MenuItem::linkToCrud('Géneros', 'fas fa-venus-mars', Genero::class);
-            yield MenuItem::linkToCrud('Módulos', 'fas fa-folder-open', Modulo::class);
-            yield MenuItem::linkToCrud('Operaciones', 'fas fa-box', Operacion::class);
-            yield MenuItem::linkToCrud('Operación usuarios', 'fas fa-chalkboard-teacher', OperacionUsuario::class);
+            if (array_key_exists("admin_otros", $permisos)) {
+                yield MenuItem::linkToCrud('Módulos', 'fas fa-folder-open', Modulo::class);
+                yield MenuItem::linkToCrud('Operaciones', 'fas fa-box', Operacion::class);
+            }
             yield MenuItem::linkToCrud('Permisos usuarios', 'fas fa-universal-access', PermisoModuloUsuario::class);
-            yield MenuItem::linkToCrud('RH', 'fas fa-hand-holding-water', Rh::class);
-            yield MenuItem::linkToCrud('Roles', 'fas fa-box', Rol::class);
+            if (array_key_exists("admin_otros", $permisos)) {
+                yield MenuItem::linkToCrud('RH', 'fas fa-hand-holding-water', Rh::class);
+                yield MenuItem::linkToCrud('Roles', 'fas fa-box', Rol::class);
+            }
             yield MenuItem::linkToCrud('Sedes', 'fas fa-building', Sede::class);
             yield MenuItem::linkToCrud('Tipos de contrato', 'fas fa-scroll', TipoContrato::class);
             yield MenuItem::linkToCrud('Tipos de practicante', 'fas fa-user-graduate', TipoPracticante::class);
-            yield MenuItem::linkToCrud('Tipos de sangre', 'fas fa-hand-holding-water', TipoSangre::class);
-            if (array_key_exists("admin_usuario", $permisos)) {
+            if (array_key_exists("admin_otros", $permisos)) {
+                yield MenuItem::linkToCrud('Tipos de sangre', 'fas fa-hand-holding-water', TipoSangre::class);
+            }
+            if (array_key_exists("admin_usuarios", $permisos)) {
                 yield MenuItem::linkToCrud('Usuarios', 'fas fa-users-cog', Usuario::class);
             }
         }

@@ -146,7 +146,17 @@ class Usuario implements UserInterface
     private $caja_compensacion;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\OperacionUsuario")
+     * @ORM\ManyToOne(targetEntity="App\Entity\Operacion")
+     */
+    private $operacion;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Area")
+     */
+    private $area;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Cargo")
      */
     private $cargo;
 
@@ -532,7 +542,31 @@ class Usuario implements UserInterface
         return $this;
     }
 
-    public function getCargo(): ?OperacionUsuario
+    public function getOperacion(): ?Operacion
+    {
+        return $this->operacion;
+    }
+
+    public function setOperacion($operacion): self
+    {
+        $this->operacion = $operacion;
+
+        return $this;
+    }
+
+    public function getArea(): ?Area
+    {
+        return $this->area;
+    }
+
+    public function setArea($area): self
+    {
+        $this->area = $area;
+
+        return $this;
+    }
+
+    public function getCargo(): ?Cargo
     {
         return $this->cargo;
     }

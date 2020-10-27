@@ -30,7 +30,7 @@ class UsuarioCrudController extends AbstractCrudController
         $permisos = $_SESSION["permisos"];
         // dd($_SESSION["permisos"]);
         if (Crud::PAGE_EDIT === $pageName) {
-            if ($permisos["admin_usuario"]["rolNombre"]=="ROLE_SUPER_ADMIN") {
+            if ($permisos["admin_usuarios"]["rolNombre"]=="ROLE_SUPER_ADMIN") {
                 yield IdField::new('id', 'ID')
                 ->setFormTypeOptions(['attr' => ['maxlength' => 15]]);
                 yield AssociationField::new('tipo_documento', 'Documento');
@@ -93,6 +93,10 @@ class UsuarioCrudController extends AbstractCrudController
         yield AssociationField::new('arl')
         ->onlyOnForms();
         yield AssociationField::new('caja_compensacion', 'Caja compensación')
+        ->onlyOnForms();
+        yield AssociationField::new('operacion', 'Operación')
+        ->onlyOnForms();
+        yield AssociationField::new('area', 'Área')
         ->onlyOnForms();
         yield AssociationField::new('cargo')
         ->onlyOnForms();
