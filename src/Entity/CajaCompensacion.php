@@ -1,5 +1,5 @@
 <?php
-
+// Clase de Caja de Compensación
 namespace App\Entity;
 
 use App\Repository\CajaCompensacionRepository;

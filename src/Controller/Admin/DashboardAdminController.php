@@ -1,5 +1,5 @@
 <?php
-
+// Controlador para mostrar Estructura de interfaz del módulo de administración
 namespace App\Controller\Admin;
 
 use App\Entity\Area;

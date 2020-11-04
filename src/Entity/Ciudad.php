@@ -1,5 +1,5 @@
 <?php
-
+// Clase de ciudades
 namespace App\Entity;
 
 use App\Repository\CiudadRepository;

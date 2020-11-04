@@ -1,5 +1,5 @@
 <?php
-
+// Controlador para mostrar CRUD de Estados de Usuario
 namespace App\Controller\Admin;
 
 use App\Entity\EstadoUsuario;

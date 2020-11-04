@@ -1,5 +1,5 @@
 <?php
-
+// Controlador para mostrar CRUD de Roles
 namespace App\Controller\Admin;
 
 use App\Entity\Rol;

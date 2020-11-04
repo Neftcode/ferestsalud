@@ -1,5 +1,5 @@
 <?php
-
+// Controlador donde se obtienen todos los permisos y redirecciona al Dashboard
 namespace App\Controller;
 
 use App\Entity\PermisoModuloUsuario;

@@ -1,5 +1,5 @@
 <?php
-
+// Clase de Sedes
 namespace App\Entity;
 
 use App\Repository\SedeRepository;

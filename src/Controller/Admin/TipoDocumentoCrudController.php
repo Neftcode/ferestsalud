@@ -1,5 +1,5 @@
 <?php
-
+// Controlador para mostrar CRUD de Tipos de Documento
 namespace App\Controller\Admin;
 
 use App\Entity\TipoDocumento;

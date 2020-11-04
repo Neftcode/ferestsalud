@@ -1,5 +1,5 @@
 <?php
-
+// Controlador para mostrar CRUD del ARL
 namespace App\Controller\Admin;
 
 use App\Entity\Arl;

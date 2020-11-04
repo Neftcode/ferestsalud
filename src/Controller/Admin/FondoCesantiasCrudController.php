@@ -1,5 +1,5 @@
 <?php
-
+// Controlador para mostrar CRUD de Fondos de Cesantías
 namespace App\Controller\Admin;
 
 use App\Entity\FondoCesantias;

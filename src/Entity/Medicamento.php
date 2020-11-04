@@ -1,5 +1,5 @@
 <?php
-
+// Clase de Medicamentos
 namespace App\Entity;
 
 use App\Repository\MedicamentoRepository;

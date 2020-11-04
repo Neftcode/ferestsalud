@@ -1,5 +1,5 @@
 <?php
-
+// Clase de Tipos de Contrato
 namespace App\Entity;
 
 use App\Repository\TipoContratoRepository;

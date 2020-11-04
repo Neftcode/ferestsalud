@@ -1,5 +1,5 @@
 <?php
-
+// Controlador para mostrar CRUD de Tipos de Sangre
 namespace App\Controller\Admin;
 
 use App\Entity\TipoSangre;

@@ -1,5 +1,5 @@
 <?php
-
+// Clase de Clientes
 namespace App\Entity;
 
 use App\Repository\ClienteRepository;

@@ -1,5 +1,5 @@
 <?php
-
+// Clase de Tipos de Sangre
 namespace App\Entity;
 
 use App\Repository\TipoSangreRepository;

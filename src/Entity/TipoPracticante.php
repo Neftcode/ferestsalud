@@ -1,5 +1,5 @@
 <?php
-
+// Clase de Tipos de Practicante
 namespace App\Entity;
 
 use App\Repository\TipoPracticanteRepository;

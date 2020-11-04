@@ -1,5 +1,5 @@
 <?php
-
+// Clase de Módulos
 namespace App\Entity;
 
 use App\Repository\ModuloRepository;

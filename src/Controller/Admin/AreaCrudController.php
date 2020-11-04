@@ -1,5 +1,5 @@
 <?php
-
+// Controlador para mostrar CRUD del Área
 namespace App\Controller\Admin;
 
 use App\Entity\Area;

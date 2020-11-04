@@ -1,5 +1,5 @@
 <?php
-
+// Clase de Géneros
 namespace App\Entity;
 
 use App\Repository\GeneroRepository;

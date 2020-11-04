@@ -1,5 +1,5 @@
 <?php
-
+// Controlador para mostrar CRUD de Operaciones
 namespace App\Controller\Admin;
 
 use App\Entity\Operacion;

@@ -1,5 +1,5 @@
 <?php
-
+// Controlador para mostrar CRUD de Cajas de Compensación
 namespace App\Controller\Admin;
 
 use App\Entity\CajaCompensacion;

@@ -1,5 +1,5 @@
 <?php
-
+// Clase de Estados de Usuario
 namespace App\Entity;
 
 use App\Repository\EstadoUsuarioRepository;

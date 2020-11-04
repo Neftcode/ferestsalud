@@ -1,5 +1,5 @@
 <?php
-
+// Clase de Fondo de Cesantías
 namespace App\Entity;
 
 use App\Repository\FondoCesantiasRepository;

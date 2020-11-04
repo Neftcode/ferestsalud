@@ -1,5 +1,5 @@
 <?php
-
+// Clase de Área
 namespace App\Entity;
 
 use App\Repository\AreaRepository;

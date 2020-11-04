@@ -1,5 +1,5 @@
 <?php
-
+// Controlador para mostrar CRUD de Sedes
 namespace App\Controller\Admin;
 
 use App\Entity\Sede;

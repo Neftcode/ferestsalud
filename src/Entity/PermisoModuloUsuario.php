@@ -1,5 +1,5 @@
 <?php
-
+// Clase de Permisos de Usuario a los Módulos
 namespace App\Entity;
 
 use App\Repository\PermisoModuloUsuarioRepository;

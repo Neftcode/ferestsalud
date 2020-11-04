@@ -1,5 +1,5 @@
 <?php
-
+// Clase de Operaciones
 namespace App\Entity;
 
 use App\Repository\OperacionRepository;

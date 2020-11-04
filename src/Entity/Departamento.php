@@ -1,5 +1,5 @@
 <?php
-
+// Clase de Departamentos
 namespace App\Entity;
 
 use App\Repository\DepartamentoRepository;

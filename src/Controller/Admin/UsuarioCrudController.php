@@ -1,5 +1,5 @@
 <?php
-
+// Controlador para mostrar CRUD de Usuarios
 namespace App\Controller\Admin;
 
 use App\Entity\Usuario;
@@ -34,23 +34,29 @@ class UsuarioCrudController extends AbstractCrudController
                 yield IdField::new('id', 'ID')
                 ->setFormTypeOptions(['attr' => ['maxlength' => 15]]);
                 yield AssociationField::new('tipo_documento', 'Documento');
-                yield TextField::new('username', 'Usuario');
             } else {
                 yield IdField::new('id', 'ID')
                 ->setFormTypeOptions(['attr' => ['readonly' => true, 'maxlength' => 15]]);
                 yield AssociationField::new('tipo_documento', 'Documento')
                 ->setFormTypeOptions(['attr' => ['disabled' => true]]);
-                yield TextField::new('username', 'Usuario')
-                ->setFormTypeOptions(['attr' => ['readonly' => true]]);
             }
         } else {
             yield IdField::new('id', 'ID')
             ->setFormTypeOptions(['attr' => ['maxlength' => 15]]);
             yield AssociationField::new('tipo_documento', 'Documento');
-            yield TextField::new('username', 'Usuario');
         }
         yield TextField::new('nombres');
         yield TextField::new('apellidos');
+        if (Crud::PAGE_EDIT === $pageName) {
+            if ($permisos["admin_usuarios"]["rolNombre"] == "ROLE_SUPER_ADMIN") {
+                yield TextField::new('username', 'Usuario');
+            } else {
+                yield TextField::new('username', 'Usuario')
+                ->setFormTypeOptions(['attr' => ['readonly' => true]]);
+            }
+        } else {
+            yield TextField::new('username', 'Usuario');
+        }
         yield AssociationField::new('estado_usuario', 'Estado');
         yield AssociationField::new('jefe_directo', 'Jefe');
         yield EmailField::new('correo_corporativo', 'Correo corporativo')

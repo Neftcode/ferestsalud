@@ -1,5 +1,5 @@
 <?php
-
+// Controlador para mostrar página inicial
 namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;

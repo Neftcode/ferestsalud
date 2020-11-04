@@ -1,5 +1,5 @@
 <?php
-
+// Clase de Ingresos
 namespace App\Entity;
 
 use App\Repository\IngresoRepository;

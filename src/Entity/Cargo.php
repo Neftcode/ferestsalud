@@ -1,5 +1,5 @@
 <?php
-
+// Clase de Cargos
 namespace App\Entity;
 
 use App\Repository\CargoRepository;

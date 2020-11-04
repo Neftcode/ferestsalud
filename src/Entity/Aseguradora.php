@@ -1,5 +1,5 @@
 <?php
-
+// Clase de Aseguradora
 namespace App\Entity;
 
 use App\Repository\AseguradoraRepository;

@@ -1,5 +1,5 @@
 <?php
-
+// Clase de Roles
 namespace App\Entity;
 
 use App\Repository\RolRepository;

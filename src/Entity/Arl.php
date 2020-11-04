@@ -1,5 +1,5 @@
 <?php
-
+// Clase de ARL
 namespace App\Entity;
 
 use App\Repository\ArlRepository;

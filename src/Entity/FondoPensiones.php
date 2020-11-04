@@ -1,5 +1,5 @@
 <?php
-
+// Clase de Fondos de Pensiones
 namespace App\Entity;
 
 use App\Repository\FondoPensionesRepository;

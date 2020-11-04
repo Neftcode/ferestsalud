@@ -1,5 +1,5 @@
 <?php
-
+// Clase de Tipos de Documento
 namespace App\Entity;
 
 use App\Repository\TipoDocumentoRepository;

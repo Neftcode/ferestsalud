@@ -1,5 +1,5 @@
 <?php
-
+// Clase de EPS
 namespace App\Entity;
 
 use App\Repository\EpsRepository;

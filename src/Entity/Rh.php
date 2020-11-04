@@ -1,5 +1,5 @@
 <?php
-
+// Clase de RH
 namespace App\Entity;
 
 use App\Repository\RhRepository;
