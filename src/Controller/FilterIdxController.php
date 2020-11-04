@@ -13,19 +13,22 @@ class FilterIdxController extends AbstractController
      */
     public function index()
     {
-        $em = $this->getDoctrine()->getManager();
-        $permisosModulosUsuario = $em->getRepository(PermisoModuloUsuario::class)->permisosUsuario($this->getUser()->getId());
-
-        $cantPermisos = count($permisosModulosUsuario);
-        $matrizPermisos = [];
-        for ($i=0; $i<$cantPermisos; $i++) {
-            $matrizPermisos[$permisosModulosUsuario[$i]["modNombreAlt"]] = $permisosModulosUsuario[$i];
-        }
-        $_SESSION["permisos"] = $matrizPermisos;
-
-        return $this->redirectToRoute('dashboard');
+        $this->permisos($this);
+        return $this->redirectToRoute('admin');
         // return $this->render('filter_idx/index.html.twig', [
         //     'permisos' => $_SESSION["permisos"],
         // ]);
+    }
+
+    public static function permisos($_this) {
+        $em = $_this->getDoctrine()->getManager();
+        $permisosModulosUsuario = $em->getRepository(PermisoModuloUsuario::class)->permisosUsuario($_this->getUser()->getId());
+
+        $cantPermisos = count($permisosModulosUsuario);
+        $matrizPermisos = [];
+        for ($i = 0; $i < $cantPermisos; $i++) {
+            $matrizPermisos[$permisosModulosUsuario[$i]["modNombreAlt"]] = $permisosModulosUsuario[$i];
+        }
+        $_SESSION["permisos"] = $matrizPermisos;
     }
 }

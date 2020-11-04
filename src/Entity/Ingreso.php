@@ -53,9 +53,9 @@ class Ingreso
     private $estado;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Cliente")
+     * @ORM\ManyToOne(targetEntity="App\Entity\Paciente")
      */
-    private $cliente;
+    private $paciente;
 
     public function getId(): ?int
     {
@@ -146,14 +146,14 @@ class Ingreso
         return $this;
     }
 
-    public function getCliente(): ?Cliente
+    public function getPaciente(): ?Paciente
     {
-        return $this->cliente;
+        return $this->paciente;
     }
 
-    public function setCliente($cliente): self
+    public function setPaciente($paciente): self
     {
-        $this->cliente = $cliente;
+        $this->paciente = $paciente;
 
         return $this;
     }

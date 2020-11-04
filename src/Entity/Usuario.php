@@ -290,6 +290,15 @@ class Usuario implements UserInterface
         return $this;
     }
 
+    /**
+     * A visual identifier that represents this user.
+     *
+     * @see UserInterface
+     */
+    public function getFullName() {
+        return $this->nombres.' '.$this->apellidos;
+    }
+
     public function getApellidos(): ?string
     {
         return $this->apellidos;
@@ -729,7 +738,7 @@ class Usuario implements UserInterface
 
     public function __toString()
     {
-        return $this->getNombres().' '.$this->getApellidos();
+        return $this->getId().', '.$this->getFullName();
     }
 
 }

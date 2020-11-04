@@ -1,16 +1,16 @@
 <?php
-// Clase de Clientes
+// Clase de Pacientes
 namespace App\Entity;
 
-use App\Repository\ClienteRepository;
+use App\Repository\PacienteRepository;
 use DateTime;
 use Doctrine\ORM\Mapping as ORM;
 use phpDocumentor\Reflection\Types\Integer;
 
 /**
- * @ORM\Entity(repositoryClass=ClienteRepository::class)
+ * @ORM\Entity(repositoryClass=PacienteRepository::class)
  */
-class Cliente
+class Paciente
 {
     /**
      * @ORM\Id()

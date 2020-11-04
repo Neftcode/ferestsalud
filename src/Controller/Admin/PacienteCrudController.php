@@ -2,7 +2,7 @@
 // Controlador para mostrar CRUD de Ciudades
 namespace App\Controller\Admin;
 
-use App\Entity\Cliente;
+use App\Entity\Paciente;
 use DateTime;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Crud;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Filters;
@@ -12,11 +12,11 @@ use EasyCorp\Bundle\EasyAdminBundle\Field\IdField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\IntegerField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextField;
 
-class ClienteCrudController extends AbstractCrudController
+class PacienteCrudController extends AbstractCrudController
 {
     public static function getEntityFqcn(): string
     {
-        return Cliente::class;
+        return Paciente::class;
     }
 
     public function configureFields(string $pageName): iterable

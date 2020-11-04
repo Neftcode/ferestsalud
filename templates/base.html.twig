@@ -51,61 +51,24 @@
                             <p class="texto_menu">Dashboard</p>
                         </a>
                     </li>
-                    {# {% if "recepcion" in permisos|keys %}
-                    <li class="submenu">
-                        <a href="javascript:;">
-                            <div class="opcion_icon">
-                                <span class="fas fa-user-check"></span>
-                            </div>
-                            <p class="texto_menu">{{permisos.recepcion.modNombre}}
-                            </p>
-                        </a>
-                    </li>
-                    {% endif %}
-                    {% if "farmacia" in permisos|keys %}
-                    <li class="submenu">
-                        <a href="javascript:;">
-                            <div class="opcion_icon">
-                                <span class="fas fa-medkit"></span>
-                            </div>
-                            <p class="texto_menu">{{permisos.farmacia.modNombre}}
-                                <span class="fas fa-chevron-down submenu_icon"></span>
-                            </p>
-                        </a>
-                        <ul>
-                            {% if "farmacia_venta" in permisos|keys %}
-                            <li>
-                                <a href="javascript:;">
-                                    <div class="opcion_icon">
-                                        <span class="fas fa-cash-register"></span>
-                                    </div>
-                                    <p class="texto_menu">{{permisos.farmacia_venta.modNombre}}</p>
-                                </a>
-                            </li>
-                            {% endif %}
-                            {% if "farmacia_inventario" in permisos|keys %}
-                            <li>
-                                <a href="javascript:;">
-                                    <div class="opcion_icon">
-                                        <span class="fas fa-boxes"></span>
-                                    </div>
-                                    <p class="texto_menu">{{permisos.farmacia_inventario.modNombre}}</p>
-                                </a>
-                            </li>
-                            {% endif %}
-                        </ul>
-                    </li>
-                    {% endif %} #}
-                    {% if "admin" in permisos|keys %}
-                    <li class="submenu">
+                    {# {% if "admin" in permisos|keys %} #}
+                    {# <li class="submenu">
                         <a href="{{ path('admin') }}">
                             <div class="opcion_icon">
                                 <span class="fas fa-cogs"></span>
                             </div>
                             <p class="texto_menu">{{permisos.admin.modNombre}}</p>
                         </a>
+                    </li> #}
+                    {# {% endif %} #}
+                    <li class="submenu">
+                        <a href="{{ path('admin') }}">
+                            <div class="opcion_icon">
+                                <span class="fas fa-cogs"></span>
+                            </div>
+                            <p class="texto_menu">Administración</p>
+                        </a>
                     </li>
-                    {% endif %}
                 </ul>
             </div>
         {% endblock %}
