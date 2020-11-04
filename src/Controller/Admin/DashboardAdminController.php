@@ -49,7 +49,8 @@ class DashboardAdminController extends AbstractDashboardController
             FilterIdxController::permisos($this);
         }
         // redirect to some CRUD controller
-        return parent::index();
+        return $this->render('bundles/EasyAdminBundle/dashboard.html.twig');
+        // return parent::index();
         // $routeBuilder = $this->get(CrudUrlGenerator::class)->build();
 
 
