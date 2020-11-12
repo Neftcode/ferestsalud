@@ -17,16 +17,20 @@ use App\Entity\FondoCesantias;
 use App\Entity\FondoPensiones;
 use App\Entity\Genero;
 use App\Entity\Ingreso;
+use App\Entity\Insumo;
+use App\Entity\LaboratorioFarmaceutico;
 use App\Entity\Medicamento;
 use App\Entity\Modulo;
 use App\Entity\Operacion;
 use App\Entity\PermisoModuloUsuario;
+use App\Entity\Proveedor;
 use App\Entity\Rh;
 use App\Entity\Rol;
 use App\Entity\Sede;
 use App\Entity\TipoContrato;
 use App\Entity\TipoDocumento;
 use App\Entity\TipoPracticante;
+use App\Entity\TipoProducto;
 use App\Entity\TipoSangre;
 use App\Entity\Usuario;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Assets;
@@ -114,10 +118,10 @@ class DashboardAdminController extends AbstractDashboardController
         yield MenuItem::linktoRoute('Dashboard', 'fas fa-home', 'admin');
         /* Módulo Gerencia */
         if (array_key_exists("gerencia", $permisos)) {
+            yield MenuItem::section();
             $arrayGerencia = [];
             $arrayGerencia[] = MenuItem::linktoDashboard('Reportes', 'fas fa-file-excel');
             $arrayGerencia[] = MenuItem::linktoDashboard('Estadísticas', 'fas fa-chart-pie');
-            $arrayGerencia[] = MenuItem::linktoDashboard('Administración sistema', 'fas fa-cogs');
             yield MenuItem::subMenu('Gerencia', 'fas fa-user-tie')->setSubItems($arrayGerencia);
             /* Módulo Gerencia Administración del Sistema */
             $arrayGerenciaSistema = [];
@@ -125,31 +129,27 @@ class DashboardAdminController extends AbstractDashboardController
             $arrayGerenciaSistema[] = MenuItem::linkToCrud('Módulos', 'fas fa-folder-open', Modulo::class);
             $arrayGerenciaSistema[] = MenuItem::linkToCrud('Operaciones', 'fas fa-box', Operacion::class);
             $arrayGerenciaSistema[] = MenuItem::linkToCrud('Permisos usuarios', 'fas fa-universal-access', PermisoModuloUsuario::class);
-            $arrayGerenciaSistema[] = MenuItem::linkToCrud('Usuarios', 'fas fa-users-cog', Usuario::class);
-            yield MenuItem::subMenu('Gerencia - Sistema', 'fas fa-user-lock')->setSubItems($arrayGerenciaSistema);
+            yield MenuItem::subMenu('<label style="margin-right: 5px; cursor: pointer;">Gerencia - Sistema</label>', 'fas fa-user-lock')->setSubItems($arrayGerenciaSistema);
         }
         /* Módulo Talento Humano */
         if (array_key_exists("talento_humano", $permisos)) {
+            yield MenuItem::section();
             $arrayTalHum = [];
             $arrayTalHum[] = MenuItem::linkToCrud('Arl', 'fas fa-user-injured', Arl::class);
             $arrayTalHum[] = MenuItem::linkToCrud('Cajas de compensación', 'fas fa-hand-holding-heart', CajaCompensacion::class);
             $arrayTalHum[] = MenuItem::linkToCrud('Cargos', 'fas fa-user-tie', Cargo::class);
             $arrayTalHum[] = MenuItem::linkToCrud('Eps', 'fas fa-hand-holding-medical', Eps::class);
-            $arrayTalHum[] = MenuItem::linkToCrud('Estados de usuario', 'fas fa-id-badge', EstadoUsuario::class);
             $arrayTalHum[] = MenuItem::linkToCrud('Fondos de cesantías', 'fas fa-hand-holding-usd', FondoCesantias::class);
             $arrayTalHum[] = MenuItem::linkToCrud('Fondos de pensiones', 'fas fa-hand-holding-usd', FondoPensiones::class);
             $arrayTalHum[] = MenuItem::linkToCrud('Géneros', 'fas fa-venus-mars', Genero::class);
-            $arrayTalHum[] = MenuItem::linkToCrud('RH', 'fas fa-hand-holding-water', Rh::class);
-            $arrayTalHum[] = MenuItem::linkToCrud('Roles', 'fas fa-box', Rol::class);
-            $arrayTalHum[] = MenuItem::linkToCrud('Sedes', 'fas fa-building', Sede::class);
             $arrayTalHum[] = MenuItem::linkToCrud('Tipos de contrato', 'fas fa-scroll', TipoContrato::class);
             $arrayTalHum[] = MenuItem::linkToCrud('Tipos de practicante', 'fas fa-user-graduate', TipoPracticante::class);
-            $arrayTalHum[] = MenuItem::linkToCrud('Tipos de sangre', 'fas fa-hand-holding-water', TipoSangre::class);
             $arrayTalHum[] = MenuItem::linkToCrud('Usuarios', 'fas fa-users-cog', Usuario::class);
-            yield MenuItem::subMenu('Talento Humano', 'fas fa-user-check')->setSubItems($arrayTalHum);
+            yield MenuItem::subMenu('Talento Humano', 'fas fa-user-tag')->setSubItems($arrayTalHum);
         }
         /* Módulo Historia Clínica */
         if (array_key_exists("historia_clinica", $permisos)) {
+            yield MenuItem::section();
             $arrayHistClin = [];
             $arrayHistClin[] = MenuItem::linktoDashboard('Consentimiento informado', 'fas fa-database');
             $arrayHistClin[] = MenuItem::linktoDashboard('Control de asistencia', 'fas fa-database');
@@ -160,16 +160,19 @@ class DashboardAdminController extends AbstractDashboardController
         }
         /* Módulo Admisiones */
         if (array_key_exists("admisiones", $permisos)) {
+            yield MenuItem::section();
             // yield MenuItem::section('Admisiones');
             $arrayAdmisiones = [];
             $arrayAdmisiones[] = MenuItem::linktoDashboard('FURIPS', 'fas fa-database');
             $arrayAdmisiones[] = MenuItem::linktoDashboard('Gestor documental', 'fas fa-cloud');
             $arrayAdmisiones[] = MenuItem::linkToCrud('Ingreso paciente', 'fas fa-user-plus', Ingreso::class);
+            $arrayAdmisiones[] = MenuItem::linkToCrud('Pacientes', 'fas fa-users', Paciente::class);
             $arrayAdmisiones[] = MenuItem::linktoDashboard('SIRAS', 'fas fa-database');
             yield MenuItem::subMenu('Admisiones', 'fas fa-user-check')->setSubItems($arrayAdmisiones);
         }
         /* Módulo Facturacion */
         if (array_key_exists("facturacion", $permisos)) {
+            yield MenuItem::section();
             $arrayFacturacion = [];
             $arrayFacturacion[] = MenuItem::linktoDashboard('Generación factura', 'fas fa-database');
             $arrayFacturacion[] = MenuItem::linktoDashboard('Relación de envío', 'fas fa-database');
@@ -180,6 +183,7 @@ class DashboardAdminController extends AbstractDashboardController
         }
         /* Módulo Cartera */
         if (array_key_exists("cartera", $permisos)) {
+            yield MenuItem::section();
             $arrayCartera = [];
             $arrayCartera[] = MenuItem::linktoDashboard('Glosas', 'fas fa-database');
             $arrayCartera[] = MenuItem::linktoDashboard('Conciliaciones', 'fas fa-database');
@@ -188,26 +192,37 @@ class DashboardAdminController extends AbstractDashboardController
         }
         /* Módulo Farmacia */
         if (array_key_exists("farmacia", $permisos)) {
+            yield MenuItem::section();
             $arrayFarmacia = [];
-            $arrayFarmacia[] = MenuItem::linktoDashboard('Inventarios PEPS', 'fas fa-boxes');
-            $arrayFarmacia[] = MenuItem::linktoDashboard('Despachos', 'fas fa-truck-loading');
+            $arrayFarmacia[] = MenuItem::linktoRoute('Inventarios PEPS', 'fas fa-boxes', 'dashboard')->setLinkTarget('_blank');
+            $arrayFarmacia[] = MenuItem::linktoDashboard('Despachos', 'fas fa-box-open');
+            $arrayFarmacia[] = MenuItem::linkToCrud('Insumos', 'fas fa-prescription-bottle-alt', Insumo::class);
+            $arrayFarmacia[] = MenuItem::linkToCrud('Laboratorios farmacéuticos', 'fas fa-flask', LaboratorioFarmaceutico::class);
+            $arrayFarmacia[] = MenuItem::linkToCrud('Medicamentos', 'fas fa-pills', Medicamento::class);
+            $arrayFarmacia[] = MenuItem::linkToCrud('Proveedores', 'fas fa-truck-loading', Proveedor::class);
             yield MenuItem::subMenu('Farmacia', 'fas fa-medkit')->setSubItems($arrayFarmacia);
         }
         /* Módulo Sistemas */
         if (array_key_exists("sistemas", $permisos)) {
+            yield MenuItem::section();
             $arraySistemas = [];
             $arraySistemas[] = MenuItem::linkToCrud('Aseguradoras', 'fas fa-user-shield', Aseguradora::class);
             $arraySistemas[] = MenuItem::linktoDashboard('Centro de costo', 'fas fa-database');
             $arraySistemas[] = MenuItem::linktoDashboard('CIE 10', 'fas fa-database');
             $arraySistemas[] = MenuItem::linkToCrud('Ciudades', 'fas fa-city', Ciudad::class);
             $arraySistemas[] = MenuItem::linkToCrud('Departamentos', 'fas fa-flag', Departamento::class);
+            $arraySistemas[] = MenuItem::linkToCrud('Estados de usuario', 'fas fa-id-badge', EstadoUsuario::class);
             $arraySistemas[] = MenuItem::linktoDashboard('Firmas digitales', 'fas fa-database');
-            $arrayAdmisiones[] = MenuItem::linktoDashboard('Gestor documental', 'fas fa-cloud');
+            $arraySistemas[] = MenuItem::linktoDashboard('Gestor documental', 'fas fa-cloud');
             $arraySistemas[] = MenuItem::linkToCrud('Identificaciones', 'fas fa-id-card', TipoDocumento::class);
-            $arraySistemas[] = MenuItem::linkToCrud('Medicamentos', 'fas fa-medkit', Medicamento::class);
-            $arraySistemas[] = MenuItem::linkToCrud('Pacientes', 'fas fa-users', Paciente::class);
+            $arraySistemas[] = MenuItem::linkToCrud('RH', 'fas fa-hand-holding-water', Rh::class);
+            $arraySistemas[] = MenuItem::linkToCrud('Roles', 'fas fa-box', Rol::class);
+            $arraySistemas[] = MenuItem::linkToCrud('Sedes', 'fas fa-building', Sede::class);
+            $arraySistemas[] = MenuItem::linkToCrud('Tipos de producto', 'fas fa-tags', TipoProducto::class);
+            $arraySistemas[] = MenuItem::linkToCrud('Tipos de sangre', 'fas fa-hand-holding-water', TipoSangre::class);
             $arraySistemas[] = MenuItem::linkToCrud('Usuarios', 'fas fa-users-cog', Usuario::class);
             yield MenuItem::subMenu('Sistemas', 'fas fa-database')->setSubItems($arraySistemas);
+
         }
     }
 

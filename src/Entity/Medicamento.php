@@ -20,12 +20,17 @@ class Medicamento
     /**
      * @ORM\Column(type="string", length=100, unique=true)
      */
-    private $codigo_atc;
+    private $codigo;
 
     /**
      * @ORM\Column(type="string", length=255)
      */
     private $nombre;
+
+    /**
+     * @ORM\Column(type="string", length=50, unique=true)
+     */
+    private $reg_san_invima;
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -47,14 +52,14 @@ class Medicamento
         return $this->id;
     }
 
-    public function getCodigoAtc(): ?string
+    public function getCodigo(): ?string
     {
-        return $this->codigo_atc;
+        return $this->codigo;
     }
 
-    public function setCodigoAtc(string $codigo_atc): self
+    public function setCodigo(string $codigo): self
     {
-        $this->codigo_atc = $codigo_atc;
+        $this->codigo = $codigo;
 
         return $this;
     }
@@ -67,6 +72,18 @@ class Medicamento
     public function setNombre(string $nombre): self
     {
         $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    public function getRegSanInvima(): ?string
+    {
+        return $this->reg_san_invima;
+    }
+
+    public function setRegSanInvima(string $reg_san_invima): self
+    {
+        $this->reg_san_invima = $reg_san_invima;
 
         return $this;
     }
@@ -109,7 +126,7 @@ class Medicamento
 
     public function __toString()
     {
-        return $this->getNombre();
+        return $this->getCodigo() . ', ' . $this->getNombre();
     }
 
 }

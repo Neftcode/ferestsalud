@@ -17,8 +17,9 @@ class MedicamentoCrudController extends AbstractCrudController
     {
         return [
             // IdField::new('id'),
-            TextField::new('codigo_atc', 'Código ATC'),
+            TextField::new('codigo', 'Código ATC'),
             TextField::new('nombre'),
+            TextField::new('reg_san_invima', 'Registro sanitario INVIMA'),
             TextField::new('principio_activo', 'Principio activo'),
             TextField::new('concentracion', 'Concentración'),
             TextField::new('forma_farmaceutica', 'Forma farmacéutica'),

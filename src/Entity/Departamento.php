@@ -20,14 +20,14 @@ class Departamento
     private $id;
 
     /**
-     * @ORM\Column(type="integer")
-     */
-    private $codigo_dane;
-
-    /**
      * @ORM\Column(type="string", length=60)
      */
     private $nombre;
+
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $codigo_dane;
 
     /**
      * @ORM\OneToMany(targetEntity="App\Entity\Ciudad", mappedBy="departamento")

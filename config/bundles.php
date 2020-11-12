@@ -13,4 +13,8 @@ return [
     Symfony\Bundle\DebugBundle\DebugBundle::class => ['dev' => true, 'test' => true],
     Symfony\Bundle\MakerBundle\MakerBundle::class => ['dev' => true],
     EasyCorp\Bundle\EasyAdminBundle\EasyAdminBundle::class => ['all' => true],
+    // App\Acme\FerestBundle\PHPfpdf\FpdfBundle::class => ['all' => true],
+    // App\Acme\FerestBundle\PHPfpdf\FpdfProtectionBundle::class => ['all' => true],
+    // App\Acme\FerestBundle\PHPfpdf\classes\FacturaBundle::class => ['all' => true],
+    // App\Acme\FerestBundle\FestivoBundle::class => ['all' => true],
 ];

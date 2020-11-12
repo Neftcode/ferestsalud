@@ -16,6 +16,9 @@ php bin/console make:entity
 # Compilar para base de datos
 php bin/console doctrine:schema:update --force
 
+# Hacer migración
+php bin/console make:migration
+
 # Crear controlador
 php bin/console make:controller
 

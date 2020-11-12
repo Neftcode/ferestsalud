@@ -19,14 +19,14 @@ class Ciudad
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=6)
-     */
-    private $codigo_dane;
-
-    /**
      * @ORM\Column(type="string", length=30)
      */
     private $nombre;
+
+    /**
+     * @ORM\Column(type="string", length=6)
+     */
+    private $codigo_dane;
 
     /**
      * @ORM\Column(type="boolean")

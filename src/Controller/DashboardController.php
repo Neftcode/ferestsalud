@@ -12,6 +12,7 @@ class DashboardController extends AbstractController
      */
     public function index()
     {
+        return $this->redirectToRoute('pdf', ['pdf'=>'Factura']);
         return $this->render('dashboard/index.html.twig', [
             'controller_name' => 'Dashboard',
             'permisos' => $_SESSION["permisos"]
