@@ -27,5 +27,8 @@ services:
         resource: '../src/Controller/'
         tags: ['controller.service_arguments']
 
+    App\Acme\FerestBundle\PHPfpdf\font\:
+        resource: '../src/Acme/FerestBundle/PHPfpdf/font/'
+
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
