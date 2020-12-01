@@ -1,4 +1,7 @@
 <?php
+
+namespace App\Acme\FerestBundle\PHPfpdf\font;
+
 $type = 'Core';
 $name = 'Courier-BoldOblique';
 $up = -100;
