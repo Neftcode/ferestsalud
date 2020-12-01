@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{{parent()}} - Inventario PEPS
+{% endblock %}
+
+{% block body %}
+    <a href="{{ path('compra_new') }}" class="btn btn-ferest"><span class="fas fa-plus"></span> Crear nuevo</a>
+    <div class="div_tabla">
+        <table class="table mt-2">
+            <thead>
+                <tr class="tabla_header">
+                    <th>Acciones</th>
+                    <th>Id</th>
+                    <th>Fecha compra</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for compra in compras %}
+                <tr class="tabla_contenido_1">
+                    <td class="column_acciones">
+                        <a href="{{ path('compra_show', {'id': compra.id}) }}" class="btn btn-sm btn-ferest" title="Ver"><span class="fas fa-eye icon_menu"></span></a>
+                        <a href="{{ path('compra_edit', {'id': compra.id}) }}" class="btn btn-sm btn-ferest" title="Editar"><span class="fas fa-pen icon_menu"></span></a>
+                    </td>
+                    <td>{{ compra.id }}</td>
+                    <td>{{ compra.fechaCompra }}</td>
+                </tr>
+            {% else %}
+                <tr>
+                    <td colspan="3">No se encontraron registros</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

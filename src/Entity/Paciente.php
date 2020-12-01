@@ -34,11 +34,6 @@ class Paciente
     private $fecha_nacimiento;
 
     /**
-     * @ORM\Column(type="string", length=100)
-     */
-    private $ocupacion;
-
-    /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Genero")
      */
     private $genero;
@@ -87,18 +82,6 @@ class Paciente
     public function setFechaNacimiento(string $fecha_nacimiento): self
     {
         $this->fecha_nacimiento = $fecha_nacimiento;
-
-        return $this;
-    }
-
-    public function getOcupacion(): ?string
-    {
-        return $this->ocupacion;
-    }
-
-    public function setOcupacion(string $ocupacion): self
-    {
-        $this->ocupacion = $ocupacion;
 
         return $this;
     }

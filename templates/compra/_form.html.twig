@@ -1,0 +1,11 @@
+<div class="row justify-content-center p-2">
+	<div class="col-md-6 form_config">
+		<div class="form-group required m-0 mt-1 p-2">
+            {{ form_start(form) }}
+                {{ form_widget(form) }}
+                <a href="{{ path('compra_index') }}" class="btn btn-warning"><span class="fas fa-arrow-left icon_menu"></span> Regresar</a>
+                <button type="submit" class="btn btn-ferest"><span class="fas fa-save icon_menu"></span> {{ button_label|default('Guardar') }}</button>
+            {{ form_end(form) }}
+        </div>
+	</div>
+</div>

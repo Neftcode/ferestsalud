@@ -40,6 +40,13 @@ class FacturaBundle extends FpdfProtectionBundle {
     function pdfBuild($matriz) {
         $this->SetProtection(array('print'), '', 'DesarrolloFerestSalud2020*');// Implementar protección al documento (Permitir solo imprimir)
         parent::__construct('P',"mm","Letter");
+        
+        $this->SetCreator("Ferest Salud IPS", true);
+        $this->SetAuthor("Ferest Salud IPS", true);
+        $this->SetKeywords("Formato Factura", true);
+        $this->SetTitle("Formato Factura", true);
+        $this->SetSubject("Formato Factura", true);
+
         $this->encabezado($matriz["datosEmpresa"],$matriz["datosPaciente"],$matriz["datosFactura"]);
         $this->cufeConceptos($matriz["datosFactura"]);
         $this->valor($matriz["datosFactura"]);
@@ -47,12 +54,6 @@ class FacturaBundle extends FpdfProtectionBundle {
     }
 
     function encabezado($empresa, $paciente, $factura) {
-        $this->SetCreator("Ferest Salud IPS",true);
-        $this->SetAuthor("Ferest Salud IPS" ,true);
-        $this->SetKeywords("Formato Factura");
-        $this->SetTitle("Formato Factura");
-        $this->SetSubject("Formato Factura");
-
         $this->AddPage();
         $this->SetFont('Arial','B',6);//Tipo de logo
         $this->Cell(0,245,'',1);

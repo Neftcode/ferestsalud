@@ -64,7 +64,7 @@ body::-webkit-scrollbar-thumb {
     height: 100%;
     position: absolute;
     background-color: #FFFFFF;
-    padding: 0px;/*60px 15px 40px 15px;*/
+    padding: 70px 15px 40px 15px;/*60px 15px 40px 15px;*/
     transition: all 0.3s;
     box-sizing: border-box;
     overflow-y: auto;
@@ -138,6 +138,11 @@ section {
     box-shadow: 0 0 0 0.2rem rgba(15, 192, 180, 0.5);
 }
 /*Fin estilos de botones*/
+
+.form-group.required label.required:after {
+    content: "*";
+    color: #dc3545;
+}
 
 /*Flecha para hacer la página hacia arriba*/
 .ir-arriba {
@@ -630,7 +635,7 @@ outline: 1px solid slategrey;
 }
 
 /*estilo botones columna acciones*/
-tr > td > a > button {
+tr > td > a > button, tr > td > a {
     width: 25px !important;
 }
 

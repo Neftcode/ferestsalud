@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{{parent()}} - Producto
+{% endblock %}
+
+{% block body %}
+    <a href="{{ path('producto_new') }}" class="btn btn-ferest"><span class="fas fa-plus"></span> Crear nuevo</a>
+    <div class="div_tabla">
+        <table class="table mt-2">
+            <thead>
+                <tr class="tabla_header">
+                    <th>Acciones</th>
+                    <th>Producto</th>
+                    <th>Tipo</th>
+                    <th>Lote</th>
+                    <th>Fecha vencimiento</th>
+                    <th>Fabricante</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for producto in productos %}
+                <tr class="tabla_contenido_1">
+                    <td class="column_acciones">
+                        <a href="{{ path('producto_show', {'id': producto.id}) }}" class="btn btn-sm btn-ferest" title="Ver"><span class="fas fa-eye icon_menu"></span></a>
+                        <a href="{{ path('producto_edit', {'id': producto.id}) }}" class="btn btn-sm btn-ferest" title="Editar"><span class="fas fa-pen icon_menu"></span></a>
+                    </td>
+                    <td>{{ producto.prodNombre }}</td>
+                    <td>{{ producto.tipo_producto }}</td>
+                    <td>{{ producto.lote }}</td>
+                    <td>{{ producto.fecha_vencimiento }}</td>
+                    <td>{{ producto.fabricante }}</td>
+                </tr>
+            {% else %}
+                <tr>
+                    <td colspan="7">No se encontraron registros</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

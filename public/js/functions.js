@@ -1,77 +1,29 @@
-// Función para posicionar el menu y dejarlo dijo al hacer scrool
-function posicionarMenu() {
-    var alturaHeader = 0;
-    var alturaMenu = $('.navbar').outerHeight(true);
-    if ($(window).scrollTop() >= alturaHeader){
-        $('.navbar').addClass('fixed');
-        $('.container').css('margin-top', (alturaMenu) + 'px');
-    } else {
-        $('.navbar').removeClass('fixed');
-        $('.container').css('margin-top', '0');
+//Función para confirmar al borrar elemento
+function deleteConfirm(e, evt) {
+    evt.preventDefault();
+    alertify.confirm("¿Está seguro de borrar este elemento?", "Esta acción no se puede deshacer.", () => {
+        removeHandler(e);
+    }, '');
+}
+
+//Función para remover evento submit
+function removeHandler(e) {
+    if (e.removeEventListener) {
+        e.removeEventListener("submit", deleteConfirm);
+    } else if (e.detachEvent) {
+        e.detachEvent("onsubmit", deleteConfirm);
     }
+    $(e).submit();
 }
-// Función para cambiar tema en el submenú cuando se haga scroll
-function subMenuChange() {
-    var arrayElems = document.getElementsByClassName("menu_elem");
-    var newElems = [];
-    $.each(arrayElems, (idx, elem) => {
-        newElems.push(elem);
-    });
-    if (newElems.length) {
-        var posicionActual = $(window).scrollTop();
-        var resp = newElems.some((elem, idx, arr) => {
-            elem = $(elem);
-            var elemNext = $(arr[idx+1]);
-            var top = elem.offset().top-140;
-            var bottom = (elem.offset().top-140)+elem.outerHeight(true);
-            if (idx<arr.length-1) {// Validar si la posición actual es menos a la últma posición del arreglo
-                var topNext = elemNext.offset().top-140;
-                // var bottomNext = (elemNext.offset().top-140)+elemNext.outerHeight(true);
-                if (posicionActual>=top&&posicionActual<topNext) {
-                    $("#sticky-sidebar").find("a.active").removeClass("active text-white bg-success").addClass("text-success");
-                    $("#sticky-sidebar").find("a").eq(idx).removeClass("text-success").addClass("active text-white bg-success");
-                    return true;
-                }
-            } else {
-                if (posicionActual>=top&&posicionActual<bottom) {
-                    $("#sticky-sidebar").find("a.active").removeClass("active text-white bg-success").addClass("text-success");
-                    $("#sticky-sidebar").find("a").eq(idx).removeClass("text-success").addClass("active text-white bg-success");
-                    return true;
-                }
-            }
-            return false;
-        });
-        if (resp!==true) $("#sticky-sidebar").find("a.active").removeClass("active text-white bg-success").addClass("text-success");
+
+$("form.delete-form").each((i, e) => {
+    if (e.addEventListener) {
+        e.addEventListener('submit', deleteConfirm.bind(null, e));
+    } else if (e.attachEvent) {
+        e.attachEvent("onsubmit", deleteConfirm.bind(null, e));
     }
-}
-// Función para hacer scroll
-function doScroll(elem) {
-    $("body,html").animate({ scrollTop: $(elem).offset().top-139 }, 1000);
-}
-// Función para acomodar elementos
-function whenResize() {
-    if ($(".row_responsive").length) {
-        var width = $(window).outerWidth(true);
-        var elem = $(".row_responsive").find(".col_responsive");
-        if (width<=349) {
-            if (!elem.hasClass("col-12")) {
-                elem.removeClass("col-4 col-6 col-10").addClass("col-12");
-            }
-        } else if (width<=767) {
-            if (!elem.hasClass("col-10")) {
-                elem.removeClass("col-4 col-6 col-12").addClass("col-10");
-            }
-        } else if (width<=991) {
-            if (!elem.hasClass("col-6")) {
-                elem.removeClass("col-4 col-10 col-12").addClass("col-6");
-            }
-        } else {
-            if (!elem.hasClass("col-4")) {
-                elem.removeClass("col-6 col-10 col-12").addClass("col-4");
-            }
-        }
-    }
-}
+});
+
 //Función para mostrar ventana alertify
 function verPDF(path) {
     alertify.ContentDialog || alertify.dialog('ContentDialog', function() {
@@ -159,32 +111,17 @@ function verPDF(path) {
     //show the dialog
     alertify.ContentDialog(path).set({frameless: false, title:"Infografía"}).maximize();
 }
-alertify.defaults.theme.ok = "btn btn-success";
+alertify.defaults.theme.ok = "btn btn-ferest";
 alertify.defaults.theme.cancel = "btn btn-danger";
 alertify.defaults.theme.input = "form-control";
-// Ejecutar cuando la ventana haga scroll
-$(window).scroll(function() {    
-    posicionarMenu();
-    if ($(this).scrollTop() > 0) {
-        $(".ir-arriba").slideDown(600);
-    } else {
-        $(".ir-arriba").slideUp(600);
-    }
-    subMenuChange();
-});
-// Ejecutar cuando la ventana se redimensione
-$(window).resize(() => {
-    whenResize();
-});
-// Ejecutar cuando la página cargue
-document.addEventListener("DOMContentLoaded", () => {
-    whenResize();
-    $(".container").click(() => {
-        if ($("#navbarText").hasClass("show")) {
-            $("#navbarText").removeClass("show");
+
+/**
+ * Agregar asterisco a los campos requeridos
+ */
+$("input, select, textarea").each((i, e) => {
+    if (e.required) {
+        if (!$(e).siblings("label").hasClass("required")) {
+            $(e).siblings("label").addClass("required");
         }
-    });
-    $('.ir-arriba').click(() => {
-        $("body,html").animate({ scrollTop: '0px' }, 1000);
-    });
+    }
 });

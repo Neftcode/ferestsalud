@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{{parent()}} - Producto - Ver
+{% endblock %}
+
+{% block body %}
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ producto.id }}</td>
+            </tr>
+            <tr>
+                <th>Lote</th>
+                <td>{{ producto.lote }}</td>
+            </tr>
+            <tr>
+                <th>Fecha vencimiento</th>
+                <td>{{ producto.fechaVencimiento }}</td>
+            </tr>
+            <tr>
+                <th>Fabricante</th>
+                <td>{{ producto.fabricante }}</td>
+            </tr>
+            <tr>
+                <th>Tipo</th>
+                <td>{{ producto.tipoProducto }}</td>
+            </tr>
+            <tr>
+                <th>Producto</th>
+                <td>{{ producto.productoId }}</td>
+            </tr>
+            <tr>
+                <th>Laboratorio Farmacéutico</th>
+                <td>{{ producto.laboratorioFarmaceutico }}</td>
+            </tr>
+            <tr>
+                <th>Proveedor</th>
+                <td>{{ producto.proveedor }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('producto_index') }}" class="btn btn-warning"><span class="fas fa-arrow-left icon_menu"></span> Regresar</a>
+    <a href="{{ path('producto_edit', {'id': producto.id}) }}" class="btn btn-ferest"><span class="fas fa-pen icon_menu"></span> Editar</a>
+
+    {{ include('producto/_delete_form.html.twig') }}
+{% endblock %}

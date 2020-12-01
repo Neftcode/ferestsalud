@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{{parent()}} - Producto - Crear
+{% endblock %}
+
+{% block body %}
+    {{ include('producto/_form.html.twig') }}
+    {# <a href="{{ path('producto_index') }}" class="btn btn-danger">Regresar</a> #}
+{% endblock %}

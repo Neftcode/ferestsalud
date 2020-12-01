@@ -3,11 +3,11 @@
 namespace App\Controller\Admin;
 
 use App\Entity\Paciente;
-use DateTime;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Crud;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Filters;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
 use EasyCorp\Bundle\EasyAdminBundle\Field\AssociationField;
+use EasyCorp\Bundle\EasyAdminBundle\Field\FormField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\IdField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\IntegerField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextField;
@@ -35,7 +35,7 @@ class PacienteCrudController extends AbstractCrudController
             }
         } else {
             yield IdField::new('id')
-            ->setFormTypeOptions(['attr' => ['maxlength' => 15]]);
+                ->setFormTypeOptions(['attr' => ['maxlength' => 15]]);
         }
         yield TextField::new('nombres');
         yield TextField::new('apellidos');
@@ -43,9 +43,9 @@ class PacienteCrudController extends AbstractCrudController
         if (Crud::PAGE_INDEX === $pageName || Crud::PAGE_DETAIL === $pageName) {
             yield IntegerField::new('edad');
         } else {
-            yield TextField::new('fecha_nacimiento', 'Fecha nacimiento');
+            yield TextField::new('fecha_nacimiento', 'Fecha nacimiento')
+                ->setFormTypeOptions(['attr' => ['placeholder' => 'YYYY-MM-DD', 'maxlength' => 10]]);
         }
-        yield TextField::new('ocupacion', 'Ocupación');
     }
 
     public function configureFilters(Filters $filters): Filters

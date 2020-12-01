@@ -18,12 +18,12 @@ class Producto
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=50, nullable=true)
+     * @ORM\Column(type="string", length=50)
      */
     private $lote;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=10)
      */
     private $fecha_vencimiento;
 
@@ -31,6 +31,31 @@ class Producto
      * @ORM\Column(type="string", length=100, nullable=true)
      */
     private $fabricante;
+
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    private $eliminado;
+
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $entradas;
+
+    /**
+     * @ORM\Column(type="float")
+     */
+    private $costo_unitario;
+
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $salidas;
+
+    /**
+     * @ORM\Column(type="float")
+     */
+    private $precio_unitario;
 
     /**
      * @ORM\Column(type="integer")
@@ -93,6 +118,66 @@ class Producto
         return $this;
     }
 
+    public function getEliminado(): ?bool
+    {
+        return $this->eliminado;
+    }
+
+    public function setEliminado(bool $eliminado): self
+    {
+        $this->eliminado = $eliminado;
+
+        return $this;
+    }
+
+    public function getEntradas(): ?int
+    {
+        return $this->entradas;
+    }
+
+    public function setEntradas(int $entradas): self
+    {
+        $this->entradas = $entradas;
+
+        return $this;
+    }
+
+    public function getCostoUnitario(): ?float
+    {
+        return $this->costo_unitario;
+    }
+
+    public function setCostoUnitario(float $costo_unitario): self
+    {
+        $this->costo_unitario = $costo_unitario;
+
+        return $this;
+    }
+
+    public function getSalidas(): ?int
+    {
+        return $this->salidas;
+    }
+
+    public function setSalidas(int $salidas): self
+    {
+        $this->salidas = $salidas;
+
+        return $this;
+    }
+
+    public function getPrecioUnitario(): ?float
+    {
+        return $this->precio_unitario;
+    }
+
+    public function setPrecioUnitario(float $precio_unitario): self
+    {
+        $this->precio_unitario = $precio_unitario;
+
+        return $this;
+    }
+
     public function getProductoId(): ?int
     {
         return $this->producto_id;
@@ -139,6 +224,11 @@ class Producto
         $this->proveedor = $proveedor;
 
         return $this;
+    }
+
+    public function __toString()
+    {
+        return $this->getLote().', '.$this->getFechaVencimiento();
     }
 
 }

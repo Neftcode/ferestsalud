@@ -15,7 +15,7 @@
 .alertify .ajs-header {
   color: #fff;/*black*/
   /*font-weight: bold;*/
-  background: #7A1F5E;/*#fafafa*/
+  background: #01988D;/*#fafafa*/
   border-bottom: #eee 1px solid;
   /*border-radius: 2px 2px 0 0;*/
 }
@@ -35,7 +35,7 @@
   padding-right: 5px;
   margin: 5px 0px 5px 0px;
   font-size: 12px;
-  border: solid #7A1F5E 1px;
+  border: solid #01988D 1px;
   cursor: text;
 }
 .alertify .ajs-body .ajs-content p {
@@ -47,7 +47,7 @@
   /*border-radius: 0 0 2px 2px;*/
 }
 .alertify .ajs-footer .ajs-buttons .ajs-button {
-  background-color: #7A1F5E;/*transparent*/
+  background-color: #01988D;/*transparent*/
   color: #fff;/*#000*/
   border: 0;
   font-size: 14px;

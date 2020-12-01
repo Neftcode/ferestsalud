@@ -8,6 +8,7 @@ use App\Entity\Arl;
 use App\Entity\Aseguradora;
 use App\Entity\CajaCompensacion;
 use App\Entity\Cargo;
+use App\Entity\Cie10Rips;
 use App\Entity\Ciudad;
 use App\Entity\Paciente;
 use App\Entity\Departamento;
@@ -74,7 +75,10 @@ class DashboardAdminController extends AbstractDashboardController
 
     // public function configureAssets(): Assets
     // {
-    //     return Assets::new()->addCssFile('fonts/css/all.min.css');
+    //     return Assets::new()
+    //         ->addCssFile('css/daterangepicker.css')
+    //         ->addCssFile('js/daterangepicker.min.js')
+    //         ->addCssFile('js/datepickers.js');
     // }
 
     public function configureDashboard(): Dashboard
@@ -194,8 +198,8 @@ class DashboardAdminController extends AbstractDashboardController
         if (array_key_exists("farmacia", $permisos)) {
             yield MenuItem::section();
             $arrayFarmacia = [];
-            $arrayFarmacia[] = MenuItem::linktoRoute('Inventarios PEPS', 'fas fa-boxes', 'dashboard')->setLinkTarget('_blank');
-            $arrayFarmacia[] = MenuItem::linktoDashboard('Despachos', 'fas fa-box-open');
+            $arrayFarmacia[] = MenuItem::linktoRoute('Inventario PEPS', 'fas fa-boxes', 'inventario_peps')->setLinkTarget('_blank');
+            $arrayFarmacia[] = MenuItem::linktoDashboard('Despachos', 'fas fa-cash-register');
             $arrayFarmacia[] = MenuItem::linkToCrud('Insumos', 'fas fa-prescription-bottle-alt', Insumo::class);
             $arrayFarmacia[] = MenuItem::linkToCrud('Laboratorios farmacéuticos', 'fas fa-flask', LaboratorioFarmaceutico::class);
             $arrayFarmacia[] = MenuItem::linkToCrud('Medicamentos', 'fas fa-pills', Medicamento::class);
@@ -208,7 +212,7 @@ class DashboardAdminController extends AbstractDashboardController
             $arraySistemas = [];
             $arraySistemas[] = MenuItem::linkToCrud('Aseguradoras', 'fas fa-user-shield', Aseguradora::class);
             $arraySistemas[] = MenuItem::linktoDashboard('Centro de costo', 'fas fa-database');
-            $arraySistemas[] = MenuItem::linktoDashboard('CIE 10', 'fas fa-database');
+            $arraySistemas[] = MenuItem::linkToCrud('CIE 10', 'fas fa-head-side-virus', Cie10Rips::class);
             $arraySistemas[] = MenuItem::linkToCrud('Ciudades', 'fas fa-city', Ciudad::class);
             $arraySistemas[] = MenuItem::linkToCrud('Departamentos', 'fas fa-flag', Departamento::class);
             $arraySistemas[] = MenuItem::linkToCrud('Estados de usuario', 'fas fa-id-badge', EstadoUsuario::class);

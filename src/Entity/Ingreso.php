@@ -53,9 +53,29 @@ class Ingreso
     private $estado;
 
     /**
+     * @ORM\Column(type="string", length=100)
+     */
+    private $ocupacion;
+
+    /**
+     * @ORM\Column(type="string", length=5000)
+     */
+    private $cronologia_patologia;
+
+    /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Paciente")
      */
     private $paciente;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Cie10Rips")
+     */
+    private $cie10;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Aseguradora")
+     */
+    private $aseguradora;
 
     public function getId(): ?int
     {
@@ -146,6 +166,30 @@ class Ingreso
         return $this;
     }
 
+    public function getOcupacion(): ?string
+    {
+        return $this->ocupacion;
+    }
+
+    public function setOcupacion(string $ocupacion): self
+    {
+        $this->ocupacion = $ocupacion;
+
+        return $this;
+    }
+
+    public function getCronologiaPatologia(): ?string
+    {
+        return $this->cronologia_patologia;
+    }
+
+    public function setCronologiaPatologia(string $cronologia_patologia): self
+    {
+        $this->cronologia_patologia = $cronologia_patologia;
+
+        return $this;
+    }
+
     public function getPaciente(): ?Paciente
     {
         return $this->paciente;
@@ -154,6 +198,30 @@ class Ingreso
     public function setPaciente($paciente): self
     {
         $this->paciente = $paciente;
+
+        return $this;
+    }
+
+    public function getCie10(): ?Cie10Rips
+    {
+        return $this->cie10;
+    }
+
+    public function setCie10(?Cie10Rips $cie10): self
+    {
+        $this->cie10 = $cie10;
+
+        return $this;
+    }
+
+    public function getAseguradora(): ?Aseguradora
+    {
+        return $this->aseguradora;
+    }
+
+    public function setAseguradora(?Aseguradora $aseguradora): self
+    {
+        $this->aseguradora = $aseguradora;
 
         return $this;
     }

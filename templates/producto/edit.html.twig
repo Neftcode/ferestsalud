@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{{parent()}} - Producto - Editar
+{% endblock %}
+
+{% block body %}
+    {{ include('producto/_form.html.twig', {'button_label': 'Actualizar'}) }}
+
+    {{ include('producto/_delete_form.html.twig') }}
+{% endblock %}

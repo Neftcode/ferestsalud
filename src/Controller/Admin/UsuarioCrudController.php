@@ -30,29 +30,29 @@ class UsuarioCrudController extends AbstractCrudController
         $permisos = $_SESSION["permisos"];
         // dd($_SESSION["permisos"]);
         if (Crud::PAGE_EDIT === $pageName) {
-            if ($permisos["admin_usuarios"]["rolNombre"]=="ROLE_SUPER_ADMIN") {
+            if ($permisos["sistemas"]["rolNombre"]=="ROLE_ADMIN") {
                 yield IdField::new('id', 'ID')
-                ->setFormTypeOptions(['attr' => ['maxlength' => 15]]);
+                    ->setFormTypeOptions(['attr' => ['maxlength' => 15]]);
                 yield AssociationField::new('tipo_documento', 'Documento');
             } else {
                 yield IdField::new('id', 'ID')
-                ->setFormTypeOptions(['attr' => ['readonly' => true, 'maxlength' => 15]]);
+                    ->setFormTypeOptions(['attr' => ['readonly' => true, 'maxlength' => 15]]);
                 yield AssociationField::new('tipo_documento', 'Documento')
-                ->setFormTypeOptions(['attr' => ['disabled' => true]]);
+                    ->setFormTypeOptions(['attr' => ['disabled' => true]]);
             }
         } else {
             yield IdField::new('id', 'ID')
-            ->setFormTypeOptions(['attr' => ['maxlength' => 15]]);
+                ->setFormTypeOptions(['attr' => ['maxlength' => 15]]);
             yield AssociationField::new('tipo_documento', 'Documento');
         }
         yield TextField::new('nombres');
         yield TextField::new('apellidos');
         if (Crud::PAGE_EDIT === $pageName) {
-            if ($permisos["admin_usuarios"]["rolNombre"] == "ROLE_SUPER_ADMIN") {
+            if ($permisos["sistemas"]["rolNombre"] == "ROLE_ADMIN") {
                 yield TextField::new('username', 'Usuario');
             } else {
                 yield TextField::new('username', 'Usuario')
-                ->setFormTypeOptions(['attr' => ['readonly' => true]]);
+                    ->setFormTypeOptions(['attr' => ['readonly' => true]]);
             }
         } else {
             yield TextField::new('username', 'Usuario');
@@ -60,68 +60,74 @@ class UsuarioCrudController extends AbstractCrudController
         yield AssociationField::new('estado_usuario', 'Estado');
         yield AssociationField::new('jefe_directo', 'Jefe');
         yield EmailField::new('correo_corporativo', 'Correo corporativo')
-        ->onlyOnForms();
+            ->onlyOnForms();
         yield AssociationField::new('sede_laboral', 'Sede');
         yield AssociationField::new('genero', 'Género')
-        ->onlyOnForms();
+            ->onlyOnForms();
         yield TextField::new('fecha_nacimiento', 'Fecha nacimiento')
-        ->onlyOnForms();
+            ->onlyOnForms()
+            ->setFormTypeOptions(['attr' => ['placeholder' => 'YYYY-MM-DD', 'maxlength' => 10]]);;
         yield TextField::new('fecha_expedicion', 'Fecha expedición documento')
-        ->onlyOnForms();
+            ->onlyOnForms()
+            ->setFormTypeOptions(['attr' => ['placeholder' => 'YYYY-MM-DD', 'maxlength' => 10]]);;
         yield TextField::new('fecha_ingreso', 'Fecha ingreso')
-        ->onlyOnForms();
+            ->onlyOnForms()
+            ->setFormTypeOptions(['attr' => ['placeholder' => 'YYYY-MM-DD', 'maxlength' => 10]]);;
         yield TextField::new('fecha_salida', 'Fecha salida')
-        ->onlyOnForms();
+            ->onlyOnForms()
+            ->setFormTypeOptions(['attr' => ['placeholder' => 'YYYY-MM-DD', 'maxlength' => 10]]);;
         yield EmailField::new('correo_personal', 'Correo personal')
-        ->onlyOnForms();
+            ->onlyOnForms();
         yield TelephoneField::new('contacto_personal', 'Contacto personal')
-        ->onlyOnForms();
+            ->onlyOnForms();
         yield TextField::new('direccion_residencia', 'Dirección residencia')
-        ->onlyOnForms();
+            ->onlyOnForms();
         yield TextField::new('contacto_emergencia_nombre', 'Nombre contacto de emergencia')
-        ->onlyOnForms();
+            ->onlyOnForms();
         yield TelephoneField::new('contacto_emergencia_numero', 'Número contacto de emergencia')
-        ->onlyOnForms();
+            ->onlyOnForms();
         yield MoneyField::new('salario_basico', 'Salario básico')->setCurrency('COP')
-        ->onlyOnForms();
+            ->onlyOnForms();
         yield MoneyField::new('bono')->setCurrency('COP')
-        ->onlyOnForms();
+            ->onlyOnForms();
         yield MoneyField::new('auxilio_transporte', 'Auxilio transporte')->setCurrency('COP')
         ->onlyOnForms();
         yield BooleanField::new('dotacion', 'Dotación')
-        ->onlyOnForms();
+            ->onlyOnForms();
         yield BooleanField::new('carnet', 'Carné')
-        ->onlyOnForms();
+            ->onlyOnForms();
         yield BooleanField::new('control_logueo', 'Control logueo')
-        ->onlyOnForms();
-        yield TextField::new('fecha_registro', 'Fecha registro')
-        ->onlyOnForms();
+            ->onlyOnForms();
+        if (Crud::PAGE_EDIT === $pageName) {
+            yield TextField::new('fecha_registro', 'Fecha registro')
+                ->setFormTypeOptions(['attr' => ['readonly' => true]]);
+        }
         yield AssociationField::new('arl')
-        ->onlyOnForms();
+            ->onlyOnForms();
         yield AssociationField::new('caja_compensacion', 'Caja compensación')
-        ->onlyOnForms();
+            ->onlyOnForms();
         yield AssociationField::new('operacion', 'Operación')
-        ->onlyOnForms();
+            ->onlyOnForms();
         yield AssociationField::new('area', 'Área')
-        ->onlyOnForms();
+            ->onlyOnForms();
         yield AssociationField::new('cargo')
-        ->onlyOnForms();
+            ->onlyOnForms();
         yield AssociationField::new('ciudad_residencia', 'Ciudad residencia')
-        ->onlyOnForms();
+            ->onlyOnForms();
         yield AssociationField::new('eps')
-        ->onlyOnForms();
+            ->onlyOnForms();
         yield AssociationField::new('fondo_cesantias', 'Fondo cesantías')
-        ->onlyOnForms();
+            ->onlyOnForms();
         yield AssociationField::new('fondo_pensiones', 'Fondo pensiones')
-        ->onlyOnForms();
+            ->onlyOnForms();
         yield AssociationField::new('tipo_sangre', 'Tipo sangre')
-        ->setFormTypeOptions(['attr' => ['maxlenght' => 2]])
-        ->onlyOnForms();
+            ->setFormTypeOptions(['attr' => ['maxlenght' => 2]])
+            ->onlyOnForms();
         yield AssociationField::new('rh')
-        ->setFormTypeOptions(['attr' => ['maxlenght' => 2]])
-        ->onlyOnForms();
+            ->setFormTypeOptions(['attr' => ['maxlenght' => 2]])
+            ->onlyOnForms();
         yield AssociationField::new('tipo_contrato', 'Tipo contrato')
-        ->onlyOnForms();
+            ->onlyOnForms();
     }
 
     public function configureFilters(Filters $filters): Filters

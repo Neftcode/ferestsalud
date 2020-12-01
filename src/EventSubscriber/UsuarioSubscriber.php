@@ -23,7 +23,7 @@ class UsuarioSubscriber implements EventSubscriberInterface
     public static function getSubscribedEvents()
     {
         return [
-            BeforeEntityPersistedEvent::class => [['setPassword'], ['setRoles']]
+            BeforeEntityPersistedEvent::class => [['setPassword'], ['setRoles'], ['setFechaRegistro']]
         ];
     }
 
@@ -40,6 +40,14 @@ class UsuarioSubscriber implements EventSubscriberInterface
         $entity = $e->getEntityInstance();
         if ($entity instanceof Usuario) {
             $entity->setRoles(['ROLE_USER']);
+        }
+    }
+
+    public function setFechaRegistro(BeforeEntityPersistedEvent $e)
+    {
+        $entity = $e->getEntityInstance();
+        if ($entity instanceof Usuario) {
+            $entity->setFechaRegistro(date("Y-m-d H:i:s"));
         }
     }
 

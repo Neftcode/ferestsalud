@@ -11,6 +11,7 @@
             <link rel="stylesheet" href="{{ asset('css/stylesheet.css') }}">
             <link rel="stylesheet" href="{{ asset('css/alert_notify/alertify.css') }}">
             <link rel="stylesheet" href="{{ asset('css/alert_notify/themes_default.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/daterangepicker.css') }}">
             <link rel="stylesheet" href="{{ asset('css/viewer/main.css') }}">
             <link rel="stylesheet" href="{{ asset('css/viewer/viewer.css') }}">
             <link rel="stylesheet" href="{{ asset('fonts/css/all.min.css') }}">
@@ -52,14 +53,14 @@
                         </a>
                     </li>
                     {# {% if "admin" in permisos|keys %} #}
-                    {# <li class="submenu">
-                        <a href="{{ path('admin') }}">
+                    <li class="submenu">
+                        <a href="{{ path('producto_index') }}">
                             <div class="opcion_icon">
-                                <span class="fas fa-cogs"></span>
+                                <span class="fas fa-tag"></span>
                             </div>
-                            <p class="texto_menu">{{permisos.admin.modNombre}}</p>
+                            <p class="texto_menu">Producto</p>
                         </a>
-                    </li> #}
+                    </li>
                     {# {% endif %} #}
                     <li class="submenu">
                         <a href="{{ path('admin') }}">
@@ -89,7 +90,6 @@
                     </div>
                 </div>
             </footer>
-            <hr id="final_contenido">
         {% endblock %}
         {% block javascripts %}
             <script type="text/javascript" src="{{ asset('js/jquery-3.5.1.min.js') }}"></script>
@@ -98,12 +98,15 @@
             <script type="text/javascript" src="{{ asset('js/popper.min.js') }}"></script>
             <script type="text/javascript" src="{{ asset('js/menu-abrir.js') }}"></script>
             <script type="text/javascript" src="{{ asset('js/alert_notify/alertify.min.js') }}"></script>
+            <script type="text/javascript" src="{{ asset('js/moment.min.js') }}"></script>
+            <script type="text/javascript" src="{{ asset('js/holidays.js') }}"></script>
+            <script type="text/javascript" src="{{ asset('js/daterangepicker.min.js') }}"></script>
+            <script type="text/javascript" src="{{ asset('js/datepickers.js') }}"></script>
             <script type="text/javascript" src="{{ asset('js/viewer/viewer.js') }}"></script>
             <script type="text/javascript" src="{{ asset('js/console.js') }}"></script>
-            <script type="text/javascript" src="{{ asset('js/functions_index.js') }}"></script>
-            <script type="text/javascript" src="{{ asset('js/moment.min.js') }}"></script>
             <script type="text/javascript" src="{{ asset('js/reload.js') }}"></script>
             <script type="text/javascript" src="{{ asset('js/security.js') }}"></script>
+            <script type="text/javascript" src="{{ asset('js/functions.js') }}"></script>
         {% endblock %}
     </body>
 </html>
