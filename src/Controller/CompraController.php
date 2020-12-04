@@ -44,7 +44,7 @@ class CompraController extends AbstractController
         }
 
         return $this->render('compra/new.html.twig', [
-            'controller_name' => 'Inventario PEPS - Crear',
+            'controller_name' => 'Inventario PEPS - Comprar',
             'compra' => $compra,
             'form' => $form->createView(),
         ]);

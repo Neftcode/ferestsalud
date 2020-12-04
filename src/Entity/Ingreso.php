@@ -28,21 +28,6 @@ class Ingreso
     private $telefono_acompanante;
 
     /**
-     * @ORM\Column(type="float", nullable=true)
-     */
-    private $peso;
-
-    /**
-     * @ORM\Column(type="float", nullable=true)
-     */
-    private $talla;
-
-    /**
-     * @ORM\Column(type="integer", nullable=true)
-     */
-    private $sesiones;
-
-    /**
      * @ORM\Column(type="string", length=19)
      */
     private $fecha_ingreso;
@@ -58,24 +43,34 @@ class Ingreso
     private $ocupacion;
 
     /**
-     * @ORM\Column(type="string", length=5000)
-     */
-    private $cronologia_patologia;
-
-    /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Paciente")
      */
     private $paciente;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Cie10Rips")
-     */
-    private $cie10;
-
-    /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Aseguradora")
      */
     private $aseguradora;
+
+    /**
+     * @ORM\Column(type="array", nullable=true)
+     */
+    private $telefonos = [];
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $profesional_solicitante;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $especialidad;
+
+    /**
+     * @ORM\Column(type="string", length=50, nullable=true)
+     */
+    private $rm;
 
     public function getId(): ?int
     {
@@ -102,42 +97,6 @@ class Ingreso
     public function setTelefonoAcompanante(string $telefono_acompanante): self
     {
         $this->telefono_acompanante = $telefono_acompanante;
-
-        return $this;
-    }
-
-    public function getPeso(): ?float
-    {
-        return $this->peso;
-    }
-
-    public function setPeso(?float $peso): self
-    {
-        $this->peso = $peso;
-
-        return $this;
-    }
-
-    public function getTalla(): ?float
-    {
-        return $this->talla;
-    }
-
-    public function setTalla(?float $talla): self
-    {
-        $this->talla = $talla;
-
-        return $this;
-    }
-
-    public function getSesiones(): ?int
-    {
-        return $this->sesiones;
-    }
-
-    public function setSesiones(?int $sesiones): self
-    {
-        $this->sesiones = $sesiones;
 
         return $this;
     }
@@ -178,18 +137,6 @@ class Ingreso
         return $this;
     }
 
-    public function getCronologiaPatologia(): ?string
-    {
-        return $this->cronologia_patologia;
-    }
-
-    public function setCronologiaPatologia(string $cronologia_patologia): self
-    {
-        $this->cronologia_patologia = $cronologia_patologia;
-
-        return $this;
-    }
-
     public function getPaciente(): ?Paciente
     {
         return $this->paciente;
@@ -202,18 +149,6 @@ class Ingreso
         return $this;
     }
 
-    public function getCie10(): ?Cie10Rips
-    {
-        return $this->cie10;
-    }
-
-    public function setCie10(?Cie10Rips $cie10): self
-    {
-        $this->cie10 = $cie10;
-
-        return $this;
-    }
-
     public function getAseguradora(): ?Aseguradora
     {
         return $this->aseguradora;
@@ -222,6 +157,54 @@ class Ingreso
     public function setAseguradora(?Aseguradora $aseguradora): self
     {
         $this->aseguradora = $aseguradora;
+
+        return $this;
+    }
+
+    public function getTelefonos(): ?array
+    {
+        return $this->telefonos;
+    }
+
+    public function setTelefonos(?array $telefonos): self
+    {
+        $this->telefonos = $telefonos;
+
+        return $this;
+    }
+
+    public function getProfesionalSolicitante(): ?string
+    {
+        return $this->profesional_solicitante;
+    }
+
+    public function setProfesionalSolicitante(?string $profesional_solicitante): self
+    {
+        $this->profesional_solicitante = $profesional_solicitante;
+
+        return $this;
+    }
+
+    public function getEspecialidad(): ?string
+    {
+        return $this->especialidad;
+    }
+
+    public function setEspecialidad(?string $especialidad): self
+    {
+        $this->especialidad = $especialidad;
+
+        return $this;
+    }
+
+    public function getRm(): ?string
+    {
+        return $this->rm;
+    }
+
+    public function setRm(?string $rm): self
+    {
+        $this->rm = $rm;
 
         return $this;
     }

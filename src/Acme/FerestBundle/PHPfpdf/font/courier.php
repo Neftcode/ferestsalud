@@ -1,7 +1,5 @@
 <?php
 
-namespace App\Acme\FerestBundle\PHPfpdf\font;
-
 $type = 'Core';
 $name = 'Courier';
 $up = -100;

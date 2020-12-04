@@ -1,11 +1,25 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}
-	{{parent()}} - Inventario PEPS - Crear
+	{{parent()}} - Inventario PEPS - Comprar
 {% endblock %}
 
 {% block body %}
-    {{ include('compra/_form.html.twig') }}
-
+    <div class="row justify-content-center p-2" id="app">
+        <div class="col-md-6 form_config">
+            <div class="form-group required m-0 mt-1 p-2">
+                {{ form_start(form) }}
+                    {# <div>
+                        <label for="compra_fecha_compra" class="required">Fecha compra</label>
+                        <input type="text" id="compra_fecha_compra" name="compra[fecha_compra]" required="required" maxlength="19">
+                    </div> #}
+                    {# {{ form_widget(form) }} #}
+                    <input type="hidden" id="compra__token" name="compra[_token]" value="l1BMW0SEq0_DCeK7osURRZuOrZTyw9cowGUFjzX-mHw">
+                    <a href="{{ path('compra_index') }}" class="btn btn-warning"><span class="fas fa-arrow-left icon_menu"></span> Regresar</a>
+                    <button type="submit" class="btn btn-ferest"><span class="fas fa-save icon_menu"></span> {{ button_label|default('Guardar') }}</button>
+                {# {{ form_end(form) }} #}
+            </div>
+        </div>
+    </div>
     {# <a href="{{ path('compra_index') }}">back to list</a> #}
 {% endblock %}
