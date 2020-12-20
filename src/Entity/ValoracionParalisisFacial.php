@@ -82,1922 +82,1922 @@ class ValoracionParalisisFacial
     private $val_mus_fac_fecha;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_frontal_derecha_1;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_frontal_derecha_2;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_frontal_derecha_3;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_frontal_derecha_4;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_frontal_derecha_5;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_frontal_derecha_6;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_frontal_derecha_7;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_frontal_derecha_8;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_frontal_derecha_9;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_frontal_derecha_10;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_frontal_derecha_11;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_frontal_derecha_12;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_frontal_izquierda_1;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_frontal_izquierda_2;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_frontal_izquierda_3;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_frontal_izquierda_4;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_frontal_izquierda_5;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_frontal_izquierda_6;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_frontal_izquierda_7;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_frontal_izquierda_8;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_frontal_izquierda_9;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_frontal_izquierda_10;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_frontal_izquierda_11;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_frontal_izquierda_12;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_superciliar_derecha_1;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_superciliar_derecha_2;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_superciliar_derecha_3;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_superciliar_derecha_4;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_superciliar_derecha_5;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_superciliar_derecha_6;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_superciliar_derecha_7;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_superciliar_derecha_8;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_superciliar_derecha_9;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_superciliar_derecha_10;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_superciliar_derecha_11;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_superciliar_derecha_12;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_superciliar_izquierda_1;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_superciliar_izquierda_2;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_superciliar_izquierda_3;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_superciliar_izquierda_4;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_superciliar_izquierda_5;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_superciliar_izquierda_6;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_superciliar_izquierda_7;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_superciliar_izquierda_8;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_superciliar_izquierda_9;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_superciliar_izquierda_10;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_superciliar_izquierda_11;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_superciliar_izquierda_12;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_ojos_derecha_1;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_ojos_derecha_2;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_ojos_derecha_3;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_ojos_derecha_4;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_ojos_derecha_5;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_ojos_derecha_6;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_ojos_derecha_7;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_ojos_derecha_8;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_ojos_derecha_9;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_ojos_derecha_10;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_ojos_derecha_11;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_ojos_derecha_12;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_ojos_izquierda_1;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_ojos_izquierda_2;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_ojos_izquierda_3;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_ojos_izquierda_4;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_ojos_izquierda_5;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_ojos_izquierda_6;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_ojos_izquierda_7;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_ojos_izquierda_8;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_ojos_izquierda_9;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_ojos_izquierda_10;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_ojos_izquierda_11;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_ojos_izquierda_12;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_piramidal_nariz_derecha_1;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_piramidal_nariz_derecha_2;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_piramidal_nariz_derecha_3;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_piramidal_nariz_derecha_4;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_piramidal_nariz_derecha_5;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_piramidal_nariz_derecha_6;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_piramidal_nariz_derecha_7;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_piramidal_nariz_derecha_8;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_piramidal_nariz_derecha_9;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_piramidal_nariz_derecha_10;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_piramidal_nariz_derecha_11;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_piramidal_nariz_derecha_12;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_piramidal_nariz_izquierda_1;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_piramidal_nariz_izquierda_2;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_piramidal_nariz_izquierda_3;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_piramidal_nariz_izquierda_4;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_piramidal_nariz_izquierda_5;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_piramidal_nariz_izquierda_6;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_piramidal_nariz_izquierda_7;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_piramidal_nariz_izquierda_8;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_piramidal_nariz_izquierda_9;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_piramidal_nariz_izquierda_10;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_piramidal_nariz_izquierda_11;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_piramidal_nariz_izquierda_12;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_transverso_derecha_1;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_transverso_derecha_2;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_transverso_derecha_3;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_transverso_derecha_4;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_transverso_derecha_5;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_transverso_derecha_6;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_transverso_derecha_7;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_transverso_derecha_8;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_transverso_derecha_9;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_transverso_derecha_10;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_transverso_derecha_11;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_transverso_derecha_12;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_transverso_izquierda_1;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_transverso_izquierda_2;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_transverso_izquierda_3;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_transverso_izquierda_4;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_transverso_izquierda_5;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_transverso_izquierda_6;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_transverso_izquierda_7;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_transverso_izquierda_8;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_transverso_izquierda_9;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_transverso_izquierda_10;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_transverso_izquierda_11;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_transverso_izquierda_12;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_dilatador_derecha_1;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_dilatador_derecha_2;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_dilatador_derecha_3;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_dilatador_derecha_4;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_dilatador_derecha_5;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_dilatador_derecha_6;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_dilatador_derecha_7;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_dilatador_derecha_8;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_dilatador_derecha_9;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_dilatador_derecha_10;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_dilatador_derecha_11;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_dilatador_derecha_12;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_dilatador_izquierda_1;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_dilatador_izquierda_2;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_dilatador_izquierda_3;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_dilatador_izquierda_4;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_dilatador_izquierda_5;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_dilatador_izquierda_6;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_dilatador_izquierda_7;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_dilatador_izquierda_8;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_dilatador_izquierda_9;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_dilatador_izquierda_10;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_dilatador_izquierda_11;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_dilatador_izquierda_12;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_labios_derecha_1;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_labios_derecha_2;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_labios_derecha_3;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_labios_derecha_4;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_labios_derecha_5;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_labios_derecha_6;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_labios_derecha_7;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_labios_derecha_8;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_labios_derecha_9;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_labios_derecha_10;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_labios_derecha_11;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_labios_derecha_12;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_labios_izquierda_1;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_labios_izquierda_2;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_labios_izquierda_3;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_labios_izquierda_4;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_labios_izquierda_5;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_labios_izquierda_6;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_labios_izquierda_7;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_labios_izquierda_8;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_labios_izquierda_9;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_labios_izquierda_10;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_labios_izquierda_11;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_orbicular_labios_izquierda_12;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_elevador_labio_superior_derecha_1;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_elevador_labio_superior_derecha_2;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_elevador_labio_superior_derecha_3;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_elevador_labio_superior_derecha_4;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_elevador_labio_superior_derecha_5;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_elevador_labio_superior_derecha_6;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_elevador_labio_superior_derecha_7;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_elevador_labio_superior_derecha_8;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_elevador_labio_superior_derecha_9;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_elevador_labio_superior_derecha_10;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_elevador_labio_superior_derecha_11;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_elevador_labio_superior_derecha_12;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_elevador_labio_superior_izquierda_1;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_elevador_labio_superior_izquierda_2;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_elevador_labio_superior_izquierda_3;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_elevador_labio_superior_izquierda_4;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_elevador_labio_superior_izquierda_5;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_elevador_labio_superior_izquierda_6;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_elevador_labio_superior_izquierda_7;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_elevador_labio_superior_izquierda_8;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_elevador_labio_superior_izquierda_9;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_elevador_labio_superior_izquierda_10;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_elevador_labio_superior_izquierda_11;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_elevador_labio_superior_izquierda_12;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_superior_derecha_1;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_superior_derecha_2;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_superior_derecha_3;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_superior_derecha_4;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_superior_derecha_5;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_superior_derecha_6;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_superior_derecha_7;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_superior_derecha_8;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_superior_derecha_9;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_superior_derecha_10;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_superior_derecha_11;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_superior_derecha_12;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_superior_izquierda_1;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_superior_izquierda_2;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_superior_izquierda_3;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_superior_izquierda_4;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_superior_izquierda_5;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_superior_izquierda_6;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_superior_izquierda_7;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_superior_izquierda_8;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_superior_izquierda_9;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_superior_izquierda_10;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_superior_izquierda_11;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_superior_izquierda_12;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_inferior_derecha_1;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_inferior_derecha_2;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_inferior_derecha_3;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_inferior_derecha_4;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_inferior_derecha_5;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_inferior_derecha_6;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_inferior_derecha_7;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_inferior_derecha_8;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_inferior_derecha_9;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_inferior_derecha_10;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_inferior_derecha_11;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_inferior_derecha_12;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_inferior_izquierda_1;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_inferior_izquierda_2;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_inferior_izquierda_3;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_inferior_izquierda_4;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_inferior_izquierda_5;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_inferior_izquierda_6;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_inferior_izquierda_7;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_inferior_izquierda_8;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_inferior_izquierda_9;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_inferior_izquierda_10;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_inferior_izquierda_11;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_depresor_labio_inferior_izquierda_12;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_canino_derecha_1;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_canino_derecha_2;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_canino_derecha_3;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_canino_derecha_4;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_canino_derecha_5;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_canino_derecha_6;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_canino_derecha_7;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_canino_derecha_8;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_canino_derecha_9;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_canino_derecha_10;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_canino_derecha_11;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_canino_derecha_12;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_canino_izquierda_1;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_canino_izquierda_2;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_canino_izquierda_3;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_canino_izquierda_4;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_canino_izquierda_5;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_canino_izquierda_6;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_canino_izquierda_7;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_canino_izquierda_8;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_canino_izquierda_9;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_canino_izquierda_10;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_canino_izquierda_11;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_canino_izquierda_12;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_zigomatico_derecha_1;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_zigomatico_derecha_2;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_zigomatico_derecha_3;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_zigomatico_derecha_4;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_zigomatico_derecha_5;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_zigomatico_derecha_6;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_zigomatico_derecha_7;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_zigomatico_derecha_8;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_zigomatico_derecha_9;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_zigomatico_derecha_10;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_zigomatico_derecha_11;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_zigomatico_derecha_12;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_zigomatico_izquierda_1;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_zigomatico_izquierda_2;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_zigomatico_izquierda_3;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_zigomatico_izquierda_4;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_zigomatico_izquierda_5;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_zigomatico_izquierda_6;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_zigomatico_izquierda_7;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_zigomatico_izquierda_8;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_zigomatico_izquierda_9;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_zigomatico_izquierda_10;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_zigomatico_izquierda_11;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_zigomatico_izquierda_12;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_risorio_derecha_1;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_risorio_derecha_2;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_risorio_derecha_3;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_risorio_derecha_4;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_risorio_derecha_5;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_risorio_derecha_6;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_risorio_derecha_7;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_risorio_derecha_8;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_risorio_derecha_9;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_risorio_derecha_10;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_risorio_derecha_11;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_risorio_derecha_12;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_risorio_izquierda_1;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_risorio_izquierda_2;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_risorio_izquierda_3;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_risorio_izquierda_4;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_risorio_izquierda_5;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_risorio_izquierda_6;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_risorio_izquierda_7;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_risorio_izquierda_8;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_risorio_izquierda_9;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_risorio_izquierda_10;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_risorio_izquierda_11;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_risorio_izquierda_12;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_buccinador_derecha_1;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_buccinador_derecha_2;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_buccinador_derecha_3;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_buccinador_derecha_4;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_buccinador_derecha_5;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_buccinador_derecha_6;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_buccinador_derecha_7;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_buccinador_derecha_8;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_buccinador_derecha_9;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_buccinador_derecha_10;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_buccinador_derecha_11;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_buccinador_derecha_12;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_buccinador_izquierda_1;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_buccinador_izquierda_2;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_buccinador_izquierda_3;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_buccinador_izquierda_4;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_buccinador_izquierda_5;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_buccinador_izquierda_6;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_buccinador_izquierda_7;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_buccinador_izquierda_8;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_buccinador_izquierda_9;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_buccinador_izquierda_10;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_buccinador_izquierda_11;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_buccinador_izquierda_12;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cuadro_menton_derecha_1;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cuadro_menton_derecha_2;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cuadro_menton_derecha_3;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cuadro_menton_derecha_4;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cuadro_menton_derecha_5;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cuadro_menton_derecha_6;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cuadro_menton_derecha_7;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cuadro_menton_derecha_8;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cuadro_menton_derecha_9;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cuadro_menton_derecha_10;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cuadro_menton_derecha_11;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cuadro_menton_derecha_12;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cuadro_menton_izquierda_1;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cuadro_menton_izquierda_2;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cuadro_menton_izquierda_3;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cuadro_menton_izquierda_4;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cuadro_menton_izquierda_5;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cuadro_menton_izquierda_6;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cuadro_menton_izquierda_7;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cuadro_menton_izquierda_8;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cuadro_menton_izquierda_9;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cuadro_menton_izquierda_10;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cuadro_menton_izquierda_11;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cuadro_menton_izquierda_12;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cutaneo_derecha_1;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cutaneo_derecha_2;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cutaneo_derecha_3;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cutaneo_derecha_4;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cutaneo_derecha_5;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cutaneo_derecha_6;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cutaneo_derecha_7;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cutaneo_derecha_8;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cutaneo_derecha_9;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cutaneo_derecha_10;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cutaneo_derecha_11;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cutaneo_derecha_12;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cutaneo_izquierda_1;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cutaneo_izquierda_2;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cutaneo_izquierda_3;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cutaneo_izquierda_4;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cutaneo_izquierda_5;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cutaneo_izquierda_6;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cutaneo_izquierda_7;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cutaneo_izquierda_8;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cutaneo_izquierda_9;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cutaneo_izquierda_10;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cutaneo_izquierda_11;
 
     /**
-     * @ORM\Column(type="string", length=10, nullable=true)
+     * @ORM\Column(type="string", length=1, nullable=true)
      */
     private $val_mus_fac_cutaneo_izquierda_12;
 

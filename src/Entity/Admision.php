@@ -1,14 +1,14 @@
 <?php
-// Clase de Ingresos
+// Clase de Admisiones
 namespace App\Entity;
 
-use App\Repository\IngresoRepository;
+use App\Repository\AdmisionRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass=IngresoRepository::class)
+ * @ORM\Entity(repositoryClass=AdmisionRepository::class)
  */
-class Ingreso
+class Admision
 {
     /**
      * @ORM\Id()

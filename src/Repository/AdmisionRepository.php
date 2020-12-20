@@ -2,25 +2,25 @@
 
 namespace App\Repository;
 
-use App\Entity\Ingreso;
+use App\Entity\Admision;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
- * @method Ingreso|null find($id, $lockMode = null, $lockVersion = null)
- * @method Ingreso|null findOneBy(array $criteria, array $orderBy = null)
- * @method Ingreso[]    findAll()
- * @method Ingreso[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+ * @method Admision|null find($id, $lockMode = null, $lockVersion = null)
+ * @method Admision|null findOneBy(array $criteria, array $orderBy = null)
+ * @method Admision[]    findAll()
+ * @method Admision[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
  */
-class IngresoRepository extends ServiceEntityRepository
+class AdmisionRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
     {
-        parent::__construct($registry, Ingreso::class);
+        parent::__construct($registry, Admision::class);
     }
 
     // /**
-    //  * @return Ingreso[] Returns an array of Ingreso objects
+    //  * @return Admision[] Returns an array of Admision objects
     //  */
     /*
     public function findByExampleField($value)
@@ -37,7 +37,7 @@ class IngresoRepository extends ServiceEntityRepository
     */
 
     /*
-    public function findOneBySomeField($value): ?Ingreso
+    public function findOneBySomeField($value): ?Admision
     {
         return $this->createQueryBuilder('i')
             ->andWhere('i.exampleField = :val')

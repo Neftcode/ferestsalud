@@ -3,6 +3,7 @@
 namespace App\Controller\Admin;
 
 use App\Controller\FilterIdxController;
+use App\Entity\Admision;
 use App\Entity\Area;
 use App\Entity\Arl;
 use App\Entity\Aseguradora;
@@ -17,7 +18,6 @@ use App\Entity\EstadoUsuario;
 use App\Entity\FondoCesantias;
 use App\Entity\FondoPensiones;
 use App\Entity\Genero;
-use App\Entity\Ingreso;
 use App\Entity\Insumo;
 use App\Entity\LaboratorioFarmaceutico;
 use App\Entity\Medicamento;
@@ -169,7 +169,7 @@ class DashboardAdminController extends AbstractDashboardController
             $arrayAdmisiones = [];
             $arrayAdmisiones[] = MenuItem::linktoDashboard('FURIPS', 'fas fa-database');
             $arrayAdmisiones[] = MenuItem::linktoDashboard('Gestor documental', 'fas fa-cloud');
-            $arrayAdmisiones[] = MenuItem::linkToCrud('Ingreso paciente', 'fas fa-user-plus', Ingreso::class);
+            $arrayAdmisiones[] = MenuItem::linkToCrud('Admisión paciente', 'fas fa-user-plus', Admision::class);
             $arrayAdmisiones[] = MenuItem::linkToCrud('Pacientes', 'fas fa-users', Paciente::class);
             $arrayAdmisiones[] = MenuItem::linktoDashboard('SIRAS', 'fas fa-database');
             yield MenuItem::subMenu('Admisiones', 'fas fa-user-check')->setSubItems($arrayAdmisiones);

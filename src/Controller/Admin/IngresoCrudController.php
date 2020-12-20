@@ -31,7 +31,6 @@ class IngresoCrudController extends AbstractCrudController
             AssociationField::new('paciente'),
             TextField::new('ocupacion', 'Ocupación')
                 ->onlyOnForms(),
-            AssociationField::new('cie10', 'CIE 10'),
             AssociationField::new('aseguradora'),
             TextField::new('nombre_acompanante', 'Nombre acompañante')
                 ->onlyOnForms(),
@@ -61,7 +60,6 @@ class IngresoCrudController extends AbstractCrudController
         return $filters
             ->add('paciente')
             ->add('ocupacion')
-            ->add('cie10')
             ->add('aseguradora')
             ->add('estado')
             ->add('fecha_ingreso');
