@@ -12,7 +12,7 @@ class ValoracionColumnaVertebral
 {
     /**
      * @ORM\Id()
-     * @ORM\OneToOne(targetEntity=ValoracionGeneral::class, cascade={"persist", "remove"})
+     * @ORM\OneToOne(targetEntity=Admision::class, cascade={"persist", "remove"})
      */
     private $id;
 

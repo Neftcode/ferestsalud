@@ -43,7 +43,8 @@ class Admision
     private $ocupacion;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Paciente")
+     * @ORM\ManyToOne(targetEntity="App\Entity\Paciente", cascade={"persist", "remove"})
+     * @ORM\JoinColumn(nullable=false)
      */
     private $paciente;
 
@@ -71,6 +72,12 @@ class Admision
      * @ORM\Column(type="string", length=50, nullable=true)
      */
     private $rm;
+
+    /**
+     * @ORM\ManyToOne(targetEntity=Usuario::class, cascade={"persist", "remove"})
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $usuario;
 
     public function getId(): ?int
     {
@@ -142,7 +149,7 @@ class Admision
         return $this->paciente;
     }
 
-    public function setPaciente($paciente): self
+    public function setPaciente(Paciente $paciente): self
     {
         $this->paciente = $paciente;
 
@@ -205,6 +212,18 @@ class Admision
     public function setRm(?string $rm): self
     {
         $this->rm = $rm;
+
+        return $this;
+    }
+
+    public function getUsuario(): ?Usuario
+    {
+        return $this->usuario;
+    }
+
+    public function setUsuario(?Usuario $usuario): self
+    {
+        $this->usuario = $usuario;
 
         return $this;
     }

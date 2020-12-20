@@ -12,8 +12,7 @@ class ValoracionGeneral
 {
     /**
      * @ORM\Id()
-     * @ORM\GeneratedValue()
-     * @ORM\Column(type="integer")
+     * @ORM\OneToOne(targetEntity=Admision::class, cascade={"persist", "remove"})
      */
     private $id;
 
@@ -23,12 +22,12 @@ class ValoracionGeneral
     private $sesiones;
 
     /**
-     * @ORM\Column(type="float")
+     * @ORM\Column(type="float", nullable=true)
      */
     private $peso;
 
     /**
-     * @ORM\Column(type="float")
+     * @ORM\Column(type="float", nullable=true)
      */
     private $talla;
 
@@ -81,11 +80,18 @@ class ValoracionGeneral
      * @ORM\OneToOne(targetEntity=Usuario::class, cascade={"persist", "remove"})
      * @ORM\JoinColumn(nullable=false)
      */
-    private $usuario;
+    private $fisioterapeuta;
 
     public function getId(): ?int
     {
         return $this->id;
+    }
+
+    public function setId(int $id): self
+    {
+        $this->id = $id;
+
+        return $this;
     }
 
     public function getSesiones(): ?int
@@ -234,12 +240,12 @@ class ValoracionGeneral
 
     public function getUsuario(): ?Usuario
     {
-        return $this->usuario;
+        return $this->fisioterapeuta;
     }
 
-    public function setUsuario(Usuario $usuario): self
+    public function setUsuario(Usuario $fisioterapeuta): self
     {
-        $this->usuario = $usuario;
+        $this->fisioterapeuta = $fisioterapeuta;
 
         return $this;
     }
